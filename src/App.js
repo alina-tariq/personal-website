@@ -11,9 +11,9 @@ import Resume from './components/resume/Resume';
 function App() {
   return (
     <>
-     
+      <section>
       <NavigationBar />
-     
+      </section>
       <section>
         <Main />
       </section>
