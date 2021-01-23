@@ -5,6 +5,8 @@ import Library from '../../assets/img/library.png';
 import Crochet from '../../assets/img/crochet.png';
 import Travel from '../../assets/img/travel.png';
 import Netflix from '../../assets/img/netflix.png';
+import Raptors from '../../assets/img/raptors.png';
+import kitty from '../../assets/img/1stcat.png'; 
 
 const coding = (props) => (
     <Tooltip id="overlay" {...props}>
@@ -36,6 +38,12 @@ const netflix = (props) => (
     </Tooltip>
 );
 
+const raptors = (props) => (
+    <Tooltip id="overlay" {...props}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+    </Tooltip>
+);
+
 const About = () => {
     return (
         <div>
@@ -43,8 +51,9 @@ const About = () => {
                 <Row>
                     <Col className="about">
                         {/*sm screens*/}
-                        <div id="text-small" className="d-md-none d-sm-block">
-                            <h1 id="heading">About Me</h1>
+                        <div id="text" className="d-md-none d-sm-block">
+                            <img src={kitty} alt="kitty" id="heading-cat" />
+                            <h1 id="heading-text">About Me</h1>
                             <br />
                             <br />
                             <h2>
@@ -55,8 +64,11 @@ const About = () => {
                         </div>
 
                         {/*med screens*/}
-                        <div id="text-medium" className="d-none d-md-block d-lg-none">
-                            <h1 id="heading">About Me</h1>
+                        <div id="text" className="d-none d-md-block d-lg-none">
+                            <div className="heading">
+                                <img src={kitty} alt="kitty" id="heading-cat" />
+                                <h1 id="heading-text">About Me</h1>
+                            </div>
                             <br />
                             <br />
                             <h2>
@@ -67,7 +79,7 @@ const About = () => {
                         </div>
 
                         <div className="d-none d-md-block d-lg-none">
-                            <div className="mdfirst">
+                            <div className="first">
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -75,9 +87,7 @@ const About = () => {
                                     >
                                 <img src={Coding} alt="coding" />
                                 </OverlayTrigger>
-                            </div>
 
-                            <div className="mdsecond">
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -87,7 +97,7 @@ const About = () => {
                                 </OverlayTrigger>
                             </div>
 
-                            <div className="mdfirst">
+                            <div>
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -95,9 +105,25 @@ const About = () => {
                                     >
                                     <img src={Library} alt="library" />
                                 </OverlayTrigger>
+
+                                <OverlayTrigger
+                                            placement="left"
+                                            delay={{ show: 150, hide: 400 }}
+                                            overlay={netflix}
+                                            >
+                                            <img src={Netflix} alt="netflix" />
+                                </OverlayTrigger>
                             </div>
 
-                            <div className="mdsecond">
+                            <div className="first">
+                                <OverlayTrigger
+                                    placement="left"
+                                    delay={{ show: 150, hide: 400 }}
+                                    overlay={raptors}
+                                    >
+                                    <img src={Raptors} alt="raptors" />
+                                </OverlayTrigger>
+
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -106,21 +132,12 @@ const About = () => {
                                     <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
                             </div>
-                            
-                            <div className="mdfirst">
-                                <OverlayTrigger
-                                    placement="left"
-                                    delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
-                                    >
-                                    <img src={Library} alt="library" />
-                                </OverlayTrigger>
-                            </div>
                         </div>
 
                         {/*lg screens*/}
-                        <div id="text-medium" className="d-none d-lg-block d-xl-none">
-                            <h1 id="heading">About Me</h1>
+                        <div id="text" className="d-none d-lg-block d-xl-none">
+                            <img src={kitty} alt="kitty" id="heading-cat" />
+                            <h1 id="heading-text">About Me</h1>
                             <br />
                             <br />
                             <h2>
@@ -131,7 +148,7 @@ const About = () => {
                         </div>
 
                         <div className="d-none d-lg-block d-xl-none">
-                            <div className="lgfirst">
+                            <div className="first">
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -139,9 +156,7 @@ const About = () => {
                                     >
                                 <img src={Coding} alt="coding" />
                                 </OverlayTrigger>
-                            </div>
 
-                            <div className="lgsecond">
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -151,7 +166,7 @@ const About = () => {
                                 </OverlayTrigger>
                             </div>
 
-                            <div className="lgfirst">
+                            <div>
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -159,9 +174,17 @@ const About = () => {
                                     >
                                     <img src={Library} alt="library" />
                                 </OverlayTrigger>
+
+                                <OverlayTrigger
+                                    placement="left"
+                                    delay={{ show: 150, hide: 400 }}
+                                    overlay={netflix}
+                                    >
+                                    <img src={Netflix} alt="netflix" />
+                                </OverlayTrigger>
                             </div>
 
-                            <div className="lgsecond">
+                            <div className="first">
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
@@ -169,21 +192,21 @@ const About = () => {
                                     >
                                     <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
-                            </div>
-                            
-                            <div className="lgfirst">
+
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={raptors}
                                     >
-                                    <img src={Library} alt="library" />
+                                    <img src={Raptors} alt="raptors" />
                                 </OverlayTrigger>
                             </div>
                         </div>
 
-                        <div id="text-big" className="d-none d-xl-block">
-                            <h1 id="heading">About Me</h1>
+                        {/* xl screens */}
+                        <div id="text" className="d-none d-xl-block">
+                            <img src={kitty} alt="kitty" id="heading-cat" />
+                            <h1 id="heading-text">About Me</h1>
                             <br />
                             <br />
                             <h2>
@@ -195,13 +218,12 @@ const About = () => {
 
                         <div className="d-none d-xl-block">
                             <div id="firstrow">
-
                                 <OverlayTrigger
                                     placement="top"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={coding}
+                                    overlay={netflix}
                                     >
-                                <img src={Coding} alt="coding" />
+                                    <img src={Netflix} alt="netflix" />
                                 </OverlayTrigger>
 
                                 <OverlayTrigger
@@ -222,18 +244,27 @@ const About = () => {
                             </div>
                             <div id="secondrow">
                                 <OverlayTrigger
-                                    placement="bottom"
+                                    placement="left"
                                     delay={{ show: 150, hide: 400 }}
                                     overlay={travel}
                                     >
                                     <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
                                 <OverlayTrigger
+                                    placement="right"
+                                    delay={{ show: 150, hide: 400 }}
+                                    overlay={coding}
+                                    >
+                                <img src={Coding} alt="coding" />
+                                </OverlayTrigger>
+                            </div>
+                            <div id="thirdrow">
+                                <OverlayTrigger
                                     placement="bottom"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={netflix}
+                                    overlay={raptors}
                                     >
-                                    <img src={Netflix} alt="netflix" />
+                                    <img src={Raptors} alt="raptors" />
                                 </OverlayTrigger>
                             </div>
                         </div>
