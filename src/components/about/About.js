@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,Row,Col} from '../../../node_modules/react-bootstrap';
-//import MyPicture from '../../assets/img/meicon.png';
+import MyPicture from '../../assets/img/meicon.png';
 
 const About = () => {
     return (
@@ -9,6 +9,11 @@ const About = () => {
                 <Row>
                     <Col className="about">
                         <h1>Hello</h1>
+                        <img
+                            src={MyPicture}
+                            alt="me"
+                            height="100px"
+                        />
                     </Col>
                 </Row>
             </Container>
