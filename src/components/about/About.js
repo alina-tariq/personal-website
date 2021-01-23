@@ -14,6 +14,9 @@ const About = () => {
                             alt="me"
                             id="myPic"
                         />
+                        <div id="container">    
+                            <span id="spin"></span>
+                        </div>
                     </Col>
                 </Row>
             </Container>

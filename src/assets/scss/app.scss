@@ -149,6 +149,26 @@
       opacity: 100%;
       z-index: 10000;
     }
+
+    #container {
+      font-size:42px;
+      font-weight:bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1vh;
+    
+      #spin {
+        opacity: 100%;
+        &:after {
+          content:"PROGRAMMER";
+          background-color: #4B0082;
+          color:white;
+          padding: 5px 15px;
+          animation: spin 10s linear infinite;
+        }
+      }
+    }
 }
 
 .projects {
