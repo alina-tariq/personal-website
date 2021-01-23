@@ -1,0 +1,80 @@
+$vermeer: #E9C592;
+$guilder: #BB7243;
+$flying: #952637;
+$delft: #212E53;
+$haze: #c59328;
+$text: rgb(27,27,28);
+$grey: #ECECEC;
+$dgrey: #282828;
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: $flying;
+    margin-bottom: 0px;
+
+    img {
+        margin-top: 5vh;
+        height: 35%;
+        width: auto;
+        padding: 2px;
+        border: 5px solid $grey;
+        border-radius: 50%;
+        background-color: $grey;
+        opacity: 1;
+    }
+
+    #name {
+        opacity: 1;
+        color: $grey;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 1.5vh;
+        margin-bottom: 1vh;
+    }
+
+    h1 {
+        font-size: 33px;
+        font-weight:bold;
+    }
+
+    #container {
+        font-size:42px;
+        font-weight:bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vh;
+    
+        #spin {
+        opacity: 1;
+        &:after {
+            content:"PROGRAMMER";
+            background-color: $haze;
+            color: $grey;
+            padding: 5px 15px;
+            animation: spin 10s linear infinite;
+        }
+        }
+    }
+}
+
+@keyframes spin {
+    20% { 
+        content:"ESCAPE ROOM LOVER";
+    };
+    40% {
+        content:"RESEARCHER";
+    };
+    60% { 
+        content:"TRUE CRIME ADDICT";
+    };
+    80% {
+        content:"TECH ENTHUSIAST";
+    };
+}

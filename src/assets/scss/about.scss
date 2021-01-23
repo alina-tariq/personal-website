@@ -1,0 +1,82 @@
+$vermeer: #E9C592;
+$guilder: #BB7243;
+$flying: #952637;
+$delft: #212E53;
+$haze: #c59328;
+$text: rgb(27,27,28);
+$grey: #ECECEC;
+$dgrey: #282828;
+
+#overlay {
+    font-size: 15px;
+    font-weight: medium;
+}
+
+.about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: $guilder;
+    padding: 50px 10px;
+
+    #heading {
+        font-size: 33px;
+        font-weight:bold;
+        text-transform: uppercase;
+        }
+
+        #text-small {
+        max-width: 80vw;
+        }
+
+        #text-medium {
+        max-width: 60vw;
+        }
+
+        #text-big {
+        max-width: 40vw;
+        }
+
+        img {
+        width: 12vw;
+        padding: 0.5vw;
+        margin: 0.5vw 0.5vw;
+        border: 5px solid $vermeer;
+        border-radius: 50%;
+        }
+
+        #firstrow {
+        margin-left: 5vw;
+        }
+
+        #secondrow {
+        margin-left: 11.5vw;
+        }
+
+        .mdfirst, .mdsecond {
+        img {
+            width: 15vw;
+            padding: 0.75vw;
+            margin: 1vw 0vw;
+        }
+        }
+
+        .mdfirst {
+        margin-left: 5vw;
+        }
+
+        .lgfirst, .lgsecond {
+        img {
+            width: 13.5vw;
+            padding: 0.5vw;
+            margin: 0.75vw 0vw;
+
+        }
+        }
+
+        .lgfirst {
+        margin-left: 5vw;
+        }
+}

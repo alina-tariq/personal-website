@@ -1,0 +1,49 @@
+$vermeer: #E9C592;
+$guilder: #BB7243;
+$flying: #952637;
+$delft: #212E53;
+$haze: #c59328;
+$text: rgb(27,27,28);
+$grey: #ECECEC;
+$dgrey: #282828;
+
+.navbar {
+    background: $delft;
+    width: 100%;
+    height: 60px;
+
+    img {
+        border: 2px solid #282828;
+        height: 45px;
+        position: fixed;
+        top: 7.5px;
+        left: 2%;
+        z-index: 100;
+    }
+
+    .toggleicon {
+        margin-left: auto;
+        position: fixed;
+        right: 5%;
+        color: $grey;
+    }
+
+    .navcollapse {
+        position: relative;
+        margin: 0px;
+        padding: 10px 30px;
+        background-color: $delft;
+        opacity: 0.8;
+    }
+
+    .navlinks {
+        font-size: 20px;
+        color: $grey !important;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: bold;
+        &:hover {
+        color: $haze !important;
+        }
+    }
+}
