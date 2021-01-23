@@ -12,7 +12,7 @@ const About = () => {
                         <img
                             src={MyPicture}
                             alt="me"
-                            height="100px"
+                            id="myPic"
                         />
                     </Col>
                 </Row>
