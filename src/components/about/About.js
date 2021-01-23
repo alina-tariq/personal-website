@@ -8,7 +8,7 @@ const About = () => {
             <Container fluid>
                 <Row>
                     <Col className="about">
-                        <h1>Hello</h1>
+                        <h1>Hello there</h1>
                         <img
                             src={MyPicture}
                             alt="me"
