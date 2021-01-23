@@ -17,6 +17,7 @@
       position: fixed;
       top: 7.5px;
       left: 2%;
+      z-index: 100;
     }
 
     .toggleicon {
@@ -31,7 +32,6 @@
       margin: 0px;
       padding: 10px 30px;
       background-color: #ECECEC;
-      //background-color:rgb(27, 27, 38);
       opacity: 0.8;
     }
 
@@ -43,7 +43,7 @@
       text-align: right;
       font-weight: bold;
       &:hover {
-        color: navy !important;
+        color:#960303 !important;
       }
     }
 }
@@ -63,10 +63,8 @@
     height: 35%;
     width: auto;
     padding: 2px;
-    //border: 5px solid rgb(173, 78, 78);
     border: 5px solid #ECECEC;
     border-radius: 50%;
-    //background-color: rgb(173, 78, 78);
     background-color: #ECECEC;
     opacity: 1;
   }
