@@ -56,7 +56,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  //background: rgb(27, 27, 38);
+  background: rgb(27, 27, 38);
 
   img {
     margin-top: 5vh;
@@ -68,12 +68,12 @@
     border-radius: 50%;
     //background-color: rgb(173, 78, 78);
     background-color: #ECECEC;
-    opacity: 80%;
+    opacity: 100%;
   }
 
   #name {
     color: white;
-    opacity: 80%;
+    opacity: 100%;
     color: #ECECEC;
     font-size: 40px;
     font-weight: bold;
@@ -95,7 +95,7 @@
     margin-top: 1vh;
   
     #spin {
-      opacity: 90%;
+      opacity: 100%;
       &:after {
         content:"PROGRAMMER";
         background-color: #4B0082;
