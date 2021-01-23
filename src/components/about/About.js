@@ -7,8 +7,8 @@ const About = () => {
         <div>
             <Container fluid>
                 <Row>
-                    <Col className="main">
-                        <h1 id="name">Hello</h1>
+                    <Col className="about">
+                        <h1>Hello</h1>
                     </Col>
                 </Row>
             </Container>
