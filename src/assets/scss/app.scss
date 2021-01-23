@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background:#ECECEC;
+    //background: rgb(27, 27, 38);
+    //opacity: 90%;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+
+    img {
+      border: 3px solid black;
+      height: 45px;
+      position: fixed;
+      top: 7.5px;
+      left: 2%;
+      z-index: 1000;
+    }
+
+    .toggleicon {
+      margin-left: auto;
+      position: fixed;
+      right: 5%;
+      color: rgb(27, 27, 38);
+    }
+
+    .navcollapse {
+      position: relative;
+      margin: 0px;
+      padding: 10px 30px;
+      background-color: #ECECEC;
+      //background-color:rgb(27, 27, 38);
+      opacity: 80%;
+    }
+
+    .navlinks {
+      font-size: 20px;
+      color: rgb(27, 27, 38) !important;
+      text-transform: uppercase;
+      //color:white !important;
+      text-align: right;
+      font-weight: bold;
+      &:hover {
+        color: navy !important;
+      }
+    }
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgb(27, 27, 38);
+
+  img {
+    margin-top: 5vh;
+    height: 35%;
+    width: auto;
+    padding: 2px;
+    //border: 5px solid rgb(173, 78, 78);
+    border: 5px solid #ECECEC;
+    border-radius: 50%;
+    //background-color: rgb(173, 78, 78);
+    background-color: #ECECEC;
+    opacity: 80%;
+  }
+
+  #name {
+    color: white;
+    opacity: 80%;
+    color: #ECECEC;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+  }
+
+  h1 {
+    font-size: 33px;
+    font-weight:bold;
+  }
+
+  #container {
+    font-size:42px;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+  
+    #spin {
+      opacity: 90%;
+      &:after {
+        content:"PROGRAMMER";
+        background-color: #4B0082;
+        color:white;
+        padding: 5px 15px;
+        animation: spin 10s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  20% { 
+    content:"ESCAPE ROOM LOVER";
+    background-color:#FF0000;
+  };
+  40% {
+    content:"RESEARCHER";
+    background-color: #FFA500;
+  };
+  60% { 
+    content:"TRUE CRIME ADDICT";
+    background-color:#008000;
+  };
+  80% {
+    content:"TECH ENTHUSIAST";
+    background-color:#0000FF;
+  };
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(158, 44, 44);
+}
+
+.projects {
+    height: 100vh;
+    background: #0D3580;
+    opacity: 90%;  /* fallback for old browsers */
+}
+
+.resume {
+    height: 100vh;
+    background: rgb(27, 27, 38);  /* fallback for old browsers */
+}
