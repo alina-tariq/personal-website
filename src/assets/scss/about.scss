@@ -1,15 +1,26 @@
-$vermeer: #E9C592;
-$guilder: #BB7243;
+$vermeer: #e9c592;
+$beige: #d6b284;
+$guilder: #bb7243;
 $flying: #952637;
-$delft: #212E53;
+$delft: #212e53;
 $haze: #c59328;
-$text: rgb(27,27,28);
-$grey: #ECECEC;
+$text: rgb(27, 27, 28);
+$grey: #ececec;
 $dgrey: #282828;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 #overlay {
     font-size: 15px;
     font-weight: medium;
+    max-width: 20vw;
+
+    @media screen and (min-width: $xl) {
+        max-width: 12.5vw;
+    }
 }
 
 .about {
@@ -18,65 +29,81 @@ $dgrey: #282828;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: $guilder;
+    background-color: $beige;
     padding: 50px 10px;
 
-    #heading {
-        font-size: 33px;
-        font-weight:bold;
-        text-transform: uppercase;
-        }
-
-        #text-small {
+    #text {
         max-width: 80vw;
+
+        @media screen and (min-width: $md) {
+            max-width: 50vw;
         }
 
-        #text-medium {
-        max-width: 60vw;
+        @media screen and (min-width: $xl) {
+            max-width: 40vw;
         }
 
-        #text-big {
-        max-width: 40vw;
+        #heading-cat {
+            display: inline;
+            height: 75px;
+            width: auto;
+            padding: 0vw;
+            margin: 0vw;
+            border: 0px;
+            border-radius: 0%;
+            vertical-align: text-bottom;
+        }
+    
+        #heading-text {
+            display: inline;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
-        img {
-        width: 12vw;
-        padding: 0.5vw;
-        margin: 0.5vw 0.5vw;
-        border: 5px solid $vermeer;
+        h2 {
+            font-size: 20px;
+
+            @media screen and (min-width: $lg) {
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    img {
+        width: 17.5vw;
+        padding: 1vw;
+        margin: 1.25vw 1.25vw;
+        border: 5px solid $flying;
         border-radius: 50%;
-        }
 
-        #firstrow {
-        margin-left: 5vw;
-        }
-
-        #secondrow {
-        margin-left: 11.5vw;
-        }
-
-        .mdfirst, .mdsecond {
-        img {
+        @media screen and (min-width: $md) {
             width: 15vw;
             padding: 0.75vw;
-            margin: 1vw 0vw;
-        }
-        }
-
-        .mdfirst {
-        margin-left: 5vw;
+            margin: 1vw 1vw;
         }
 
-        .lgfirst, .lgsecond {
-        img {
+        @media screen and (min-width: $lg) {
             width: 13.5vw;
             padding: 0.5vw;
-            margin: 0.75vw 0vw;
-
+            margin: 0.75vw 0.75vw;
         }
-        }
+    }
 
-        .lgfirst {
+    #firstrow {
         margin-left: 5vw;
-        }
+    }
+
+    #secondrow {
+        margin-left: 11.5vw;
+    }
+
+    #thirdrow {
+        margin-left: 18vw;
+    }
+
+    .first {
+        margin-left: 5vw;
+    }
 }
