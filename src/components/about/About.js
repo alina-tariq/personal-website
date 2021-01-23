@@ -3,6 +3,8 @@ import { Container, Row, Col,Tooltip,OverlayTrigger } from '../../../node_module
 import Coding from '../../assets/img/coding.png';
 import Library from '../../assets/img/library.png';
 import Crochet from '../../assets/img/crochet.png';
+import Travel from '../../assets/img/travel.png';
+import Netflix from '../../assets/img/netflix.png';
 
 const coding = (props) => (
     <Tooltip id="overlay" {...props}>
@@ -17,6 +19,18 @@ const crochet = (props) => (
 );
 
 const library = (props) => (
+    <Tooltip id="overlay" {...props}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+    </Tooltip>
+);
+
+const travel = (props) => (
+    <Tooltip id="overlay" {...props}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+    </Tooltip>
+);
+
+const netflix = (props) => (
     <Tooltip id="overlay" {...props}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
     </Tooltip>
@@ -67,9 +81,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={library}
+                                    overlay={crochet}
                                     >
-                                <img src={Library} alt="library" className="other" />
+                                <img src={Crochet} alt="crochet"/>
                                 </OverlayTrigger>
                             </div>
 
@@ -77,9 +91,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={library}
                                     >
-                                    <img src={Crochet} alt="crochet" />
+                                    <img src={Library} alt="library" />
                                 </OverlayTrigger>
                             </div>
 
@@ -87,9 +101,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={travel}
                                     >
-                                    <img src={Coding} alt="coding" />
+                                    <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
                             </div>
                             
@@ -131,9 +145,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={library}
+                                    overlay={crochet}
                                     >
-                                <img src={Library} alt="library" className="other" />
+                                <img src={Crochet} alt="crochet"/>
                                 </OverlayTrigger>
                             </div>
 
@@ -141,9 +155,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={library}
                                     >
-                                    <img src={Crochet} alt="crochet" />
+                                    <img src={Library} alt="library" />
                                 </OverlayTrigger>
                             </div>
 
@@ -151,9 +165,9 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="left"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={travel}
                                     >
-                                    <img src={Coding} alt="coding" />
+                                    <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
                             </div>
                             
@@ -193,34 +207,33 @@ const About = () => {
                                 <OverlayTrigger
                                     placement="top"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={library}
-                                    >
-                                <img src={Library} alt="library" className="other" />
-                                </OverlayTrigger>
-
-                                <OverlayTrigger
-                                    placement="top"
-                                    delay={{ show: 150, hide: 400 }}
                                     overlay={crochet}
                                     >
                                     <img src={Crochet} alt="crochet" />
                                 </OverlayTrigger>
-
+                                
+                                <OverlayTrigger
+                                    placement="top"
+                                    delay={{ show: 150, hide: 400 }}
+                                    overlay={library}
+                                    >
+                                <img src={Library} alt="library" className="other" />
+                                </OverlayTrigger>
                             </div>
                             <div id="secondrow">
                                 <OverlayTrigger
                                     placement="bottom"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={travel}
                                     >
-                                    <img src={Coding} alt="coding" />
+                                    <img src={Travel} alt="travel" />
                                 </OverlayTrigger>
                                 <OverlayTrigger
                                     placement="bottom"
                                     delay={{ show: 150, hide: 400 }}
-                                    overlay={crochet}
+                                    overlay={netflix}
                                     >
-                                    <img src={Library} alt="library" />
+                                    <img src={Netflix} alt="netflix" />
                                 </OverlayTrigger>
                             </div>
                         </div>
