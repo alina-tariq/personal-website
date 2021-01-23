@@ -1,3 +1,12 @@
+$vermeer: #E9C592;
+$guilder: #BB7243;
+$flying: #952637;
+$delft: #212E53;
+$haze: #3e6e8a;
+$text: rgb(27,27,28);
+$grey: #ECECEC;
+$dgray: #4d4949;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,15 +14,14 @@
 }
 
 .navbar {
-    background:#ECECEC;
-    //background: rgb(27, 27, 38);
-    //opacity: 90%;
+    background: $delft;
+    //background:#ECECEC;
     width: 100%;
     height: 60px;
 
     img {
-      border: 3px solid black;
-      height: 45px;
+      border: 2px solid black;
+      height: 5px;
       position: fixed;
       top: 7.5px;
       left: 2%;
@@ -24,26 +32,25 @@
       margin-left: auto;
       position: fixed;
       right: 5%;
-      color: rgb(27, 27, 38);
+      color: $grey;
     }
 
     .navcollapse {
       position: relative;
       margin: 0px;
       padding: 10px 30px;
-      background-color: #ECECEC;
+      background-color: $delft;
       opacity: 0.8;
     }
 
     .navlinks {
       font-size: 20px;
-      color: rgb(27, 27, 38) !important;
+      color: $grey !important;
       text-transform: uppercase;
-      //color:white !important;
       text-align: right;
       font-weight: bold;
       &:hover {
-        color:#960303 !important;
+        color:$vermeer !important;
       }
     }
 }
@@ -56,21 +63,20 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background: rgb(27, 27, 38);
+  background: $flying;
 
   img {
     margin-top: 5vh;
     height: 35%;
     width: auto;
     padding: 2px;
-    border: 5px solid #ECECEC;
+    border: 5px solid $grey;
     border-radius: 50%;
-    background-color: #ECECEC;
+    background-color: $grey;
     opacity: 1;
   }
 
   #name {
-    color: white;
     opacity: 1;
     color: #ECECEC;
     font-size: 40px;
@@ -96,8 +102,8 @@
       opacity: 1;
       &:after {
         content:"PROGRAMMER";
-        background-color: #4B0082;
-        color:white;
+        background-color: $haze;
+        color: $grey;
         padding: 5px 15px;
         animation: spin 10s linear infinite;
       }
@@ -108,39 +114,104 @@
 @keyframes spin {
   20% { 
     content:"ESCAPE ROOM LOVER";
-    background-color:#FF0000;
   };
   40% {
     content:"RESEARCHER";
-    background-color: #FFA500;
   };
   60% { 
     content:"TRUE CRIME ADDICT";
-    background-color:#008000;
   };
   80% {
     content:"TECH ENTHUSIAST";
-    background-color:#0000FF;
   };
 }
 
+#overlay {
+  font-size: 15px;
+  font-weight: medium;
+}
+
 .about {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: rgb(158, 44, 44);
+    background: $guilder;
+    padding: 50px 10px;
+
+    #heading {
+      font-size: 33px;
+      font-weight:bold;
+      text-transform: uppercase;
+    }
+
+    #text-small {
+      max-width: 80vw;
+    }
+
+    #text-medium {
+      max-width: 60vw;
+    }
+
+    #text-big {
+      max-width: 40vw;
+    }
+
+    img {
+      width: 12vw;
+      padding: 0.5vw;
+      margin: 0.5vw 0.5vw;
+      border: 5px solid $haze;
+      border-radius: 50%;
+    }
+
+    #firstrow {
+      margin-left: 5vw;
+    }
+
+    #secondrow {
+      margin-left: 11.5vw;
+    }
+
+    .mdfirst, .mdsecond {
+      img {
+        width: 15vw;
+        padding: 0.75vw;
+        margin: 1vw 0vw;
+
+      }
+    }
+
+    .mdfirst {
+      margin-left: 5vw;
+    }
+
+    .lgfirst, .lgsecond {
+      img {
+        width: 13.5vw;
+        padding: 0.5vw;
+        margin: 0.75vw 0vw;
+
+      }
+    }
+
+    .lgfirst {
+      margin-left: 5vw;
+    }
 }
 
 .projects {
     height: 100vh;
-    background: #0D3580;
+    background: $guilder;
 }
 
 .resume {
     height: 100vh;
-    background: rgb(27, 27, 38);
+    background: $flying;
+}
+
+.contact {
+    height: 100vh;
+    background: #ECECEC;
 }
