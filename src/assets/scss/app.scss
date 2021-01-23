@@ -69,7 +69,6 @@
     //background-color: rgb(173, 78, 78);
     background-color: #ECECEC;
     opacity: 100%;
-    z-index: 100;
   }
 
   #name {
@@ -136,6 +135,19 @@
     flex-wrap: wrap;
     flex-direction: column;
     background: rgb(158, 44, 44);
+
+    img {
+      margin-top: 5vh;
+      height: 35%;
+      width: auto;
+      padding: 2px;
+      //border: 5px solid rgb(173, 78, 78);
+      border: 5px solid #ECECEC;
+      border-radius: 50%;
+      //background-color: rgb(173, 78, 78);
+      background-color: #ECECEC;
+      opacity: 100%;
+    }
 }
 
 .projects {
@@ -147,3 +159,4 @@
 .resume {
     height: 100vh;
     background: rgb(27, 27, 38);
+}
