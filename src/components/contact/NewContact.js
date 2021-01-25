@@ -28,11 +28,12 @@ const Contact = () => {
                             <form
                                 name="contact"
                                 method="POST"
+                                action="/?success=true"
                                 data-netlify="true"
                             >
                                 <input type="hidden" name="form-name" value="contact" />
                                 <p>
-                                    <label>Name:</label>
+                                    <label>Names: </label>
                                     <input type="text" label="name" name="name" />
                                 </p>
                                 <p>
