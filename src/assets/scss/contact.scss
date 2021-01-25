@@ -156,6 +156,7 @@ $xxl: 2200px;
         @media screen and (min-width: $lg) {
             #cat {
                 width: 400px;
+                margin-right: 40px;
 
                 #heading-cat {
                     width: 400px;
@@ -164,6 +165,7 @@ $xxl: 2200px;
 
             #form {
                 width: 400px;
+                margin-left: 40px;
 
                 .fields {
                     font-size: 18px;
@@ -188,35 +190,7 @@ $xxl: 2200px;
             
         }
 
-        @media screen and (min-width: $xl) {
-            #cat {
-                width: 500px;
 
-                #heading-cat {
-                    width: 450px;
-                }
-            }
-
-            #form {
-                width: 500px;
-
-                .fields {
-                    font-size: 20px;
-                    width: 450px;
-                }
-
-                .label {
-                    font-size: 17px;
-                }
-
-                #message {
-                    padding: 0 0 250px 0;
-                    width: 450px;
-                    font-size: 20px;
-                }
-            }
-            
-        }
 
         @media screen and (min-width: $xxl) {
             #cat {
