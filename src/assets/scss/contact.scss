@@ -1,0 +1,141 @@
+$vermeer: #e9c592;
+$beige: #d6b284;
+$guilder: #bb7243;
+$flying: #952637;
+$delft: #212e53;
+$haze: #c59328;
+$text: rgb(27, 27, 28);
+$grey: #ececec;
+$dgrey: #282828;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.contact {
+    min-height: 50vh;
+    width: 100%;
+    background-color: $flying;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 8vh;
+
+    h1 {
+        color: $grey;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 8vh;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        #cat {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+
+            #heading-cat {
+                width: 325px;
+                height: auto;
+                margin-bottom: 5vh;
+            }
+        }
+
+        #form {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(236, 236, 236, 0.7);
+            padding: 20px 0px;
+            margin-left: 20px;
+
+            .fields {
+                font-size: 15px;
+                margin-top: 5px;
+                width: 300px;
+                background: rgba(33,46,83, 0.5);
+                color: $grey;
+            }
+
+            .label {
+                font-size: 13px;
+                color: rgba(27, 27, 28, 0.7);
+                padding: 0px;
+            }
+
+            #message {
+                font-size: 15px;
+                height: 150px;
+                margin-top: 5px;
+                background: rgba(33,46,83, 0.5);
+                color: $grey;
+            }
+
+            #submit-button {
+                background-color: $flying;
+                color: $grey;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+
+        @media screen and (min-width: $lg) {
+            #cat {
+                width: 400px;
+            }
+
+            #form {
+                width: 400px;
+
+                .fields {
+                    font-size: 18px;
+                    width: 350px;
+                }
+
+                .label {
+                    font-size: 15px;
+                }
+
+                #message {
+                    height: 200px;
+                }
+            }
+            
+        }
+
+        @media screen and (min-width: $xl) {
+            #cat {
+                width: 500px;
+            }
+
+            #form {
+                width: 500px;
+
+                .fields {
+                    font-size: 20px;
+                    width: 450px;
+                }
+
+                .label {
+                    font-size: 18px;
+                }
+
+                #message {
+                    height: 250px;
+                }
+            }
+            
+        }
+    }
+}
