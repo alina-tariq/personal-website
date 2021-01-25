@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Form,} from 'react-bootstrap';
+import { navigate } from 'gatsby'
+import { Container, Row, Col, Form} from 'react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
 import NetlifyForm from 'react-ssg-netlify-forms'
 
@@ -7,16 +8,16 @@ const Contact = () => {
 
     // Post-Submit Navigate
     const postSubmit = () => {
-        alert('hooray');
+        navigate('/')
     }
 
     // Simple controlled form setup (Control your own state)
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
     const [formValues, setFormValues] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+        name: 'hello there, friend!',
+        email: 'test@example.com',
+        subject: 'what is this',
+        message: 'what is ur concern share with me'
     })
 
     return (
