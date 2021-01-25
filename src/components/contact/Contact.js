@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col,Form,Button } from '../../../node_modules/react-bootstrap';
+import { Container, Row, Col } from '../../../node_modules/react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
 
 const Contact = () => {
@@ -25,29 +25,34 @@ const Contact = () => {
                             {success && (
                                 <p style={{ color: "green" }}>Thanks for your message! </p>
                             )}
-                            <Form name="contact" method="post" action="/?success=true"
+                            <form name="contact" method="post" action="/?success=true"
                                 data-netlify="true">
                                 <input type="hidden" name="form-name" value="the-name-of-the-html-form" />
-                                <Form.Group>
-                                    <Form.Label className="label">Name</Form.Label>
-                                    <Form.Control className="fields" type="text" name="name" placeholder="Jane Smith" />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Email address</Form.Label>
-                                    <Form.Control className="fields" type="email" name="email" placeholder="name@example.com" />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Subject</Form.Label>
-                                    <Form.Control className="fields" type="text" name="subject" placeholder="Subject" />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Your message</Form.Label>
-                                    <Form.Control as="textarea" name="message" id="message" />
-                                </Form.Group>
-                                <Button variant="alert" id="submit-button" type="submit">
+                                <div>
+                                    <label className="label">Name</label>
+                                    <br />
+                                    <input className="fields" type="text" name="name" placeholder="Jane Smith" />
+                                </div>
+                                <div>
+                                    <label className="label">Email address</label>
+                                    <br />
+                                    <input className="fields" type="email" name="email" placeholder="name@example.com" />
+                                </div>
+                                <div>
+                                    <label className="label">Subject</label>
+                                    <br />
+                                    <input className="fields" type="text" name="subject" placeholder="Subject" />
+                                </div>
+                                <div>
+                                    <label className="label">Your message</label>
+                                    <br />
+                                    <input type="textarea" name="message" id="message" />
+                                </div>
+                                <br />
+                                <button id="submit-button" type="submit">
                                 Submit
-                                </Button>
-                            </Form>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </Col >
