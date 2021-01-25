@@ -11,7 +11,7 @@ import Main from './components/main/Main';
 import About from './components/about/About';
 import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
-import NewContact from './components/contact/NewContact';
+import Contact from './components/contact/Contact';
 
 //import {Container,Row,Col} from '../node_modules/react-bootstrap';
 
@@ -34,7 +34,7 @@ function App() {
         <Projects />
       </section>
       <section>
-        <NewContact />
+        <Contact />
       </section>
     </>
   );

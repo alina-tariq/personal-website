@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, Row, Col,Form,Button } from '../../../node_modules/react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
 
 const Contact = () => {
+
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+        if (window.location.search.includes('success=true')) {
+            setSuccess(true);
+        }
+    }, []);
+
     return (
         <Container fluid>
             <Row>
@@ -13,7 +22,11 @@ const Contact = () => {
                             <img src={Kitty} alt="kitty" id="heading-cat" />
                         </div>
                         <div id="form">
-                            <Form name="contact" method="post">
+                            {success && (
+                                <p style={{ color: "green" }}>Thanks for your message! </p>
+                            )}
+                            <Form name="contact" method="post" action="/?success=true"
+                                data-netlify="true">
                                 <input type="hidden" name="form-name" value="the-name-of-the-html-form" />
                                 <Form.Group>
                                     <Form.Label className="label">Name</Form.Label>
