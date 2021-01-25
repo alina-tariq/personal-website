@@ -12,30 +12,45 @@ const Contact = () => {
                         <div id="cat">
                             <img src={Kitty} alt="kitty" id="heading-cat" />
                         </div>
-                        <div id="form">
-                            <Form name="contact" method="POST">
+                        <form name="contact" method="post">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p>
+                                <label>Your Name: <input type="text" name="name"/></label>
+                            </p>
+                            <p>
+                                <label>Your Email: <input type="email" name="email"/></label>
+                            </p>
+                            <p>
+                                <label>Message: <textarea name="message"></textarea></label>
+                            </p>
+                            <p>
+                                <button type="submit">Send</button>
+                            </p>
+                        </form>
+                        {/*<div id="form">
+                            <Form name="contact" method="post">
                                 <input type="hidden" name="form-name" value="the-name-of-the-html-form" />
                                 <Form.Group>
                                     <Form.Label className="label">Name</Form.Label>
-                                    <Form.Control className="fields" type="text" placeholder="Jane Smith" />
+                                    <Form.Control className="fields" type="text" name="name" placeholder="Jane Smith" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label className="label">Email address</Form.Label>
-                                    <Form.Control className="fields" type="email" placeholder="name@example.com" />
+                                    <Form.Control className="fields" type="email" name="email" placeholder="name@example.com" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label className="label">Subject</Form.Label>
-                                    <Form.Control className="fields" type="text" placeholder="Subject" />
+                                    <Form.Control className="fields" type="text" name="subject" placeholder="Subject" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label className="label">Your message</Form.Label>
-                                    <Form.Control as="textarea" id="message" />
+                                    <Form.Control as="textarea" name="message" id="message" />
                                 </Form.Group>
                                 <Button variant="alert" id="submit-button" type="submit">
                                 Submit
                                 </Button>
                             </Form>
-                        </div>
+                        </div>*/}
                     </div>
                 </Col >
             </Row >
