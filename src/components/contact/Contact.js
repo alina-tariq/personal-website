@@ -23,40 +23,44 @@ const Contact = () => {
                         </div>
                         <div id="form">
                             {success && (
-                                <p style={{ color: "green" }}>Thanks for your message! </p>
+                                <div>
+                                    <h2 id="contact-form">Thanks for your message!</h2>
+                                </div>
                             )}
-                            <form
-                                name="contact"
-                                method="POST"
-                                action="/?success=true"
-                                data-netlify="true"
-                            >
-                                <input type="hidden" name="form-name" value="contact" />
-                                <div>
-                                    <label className="label">Name</label>
+                            {!success && (
+                                <form
+                                    name="contact"
+                                    method="POST"
+                                    action="/?success=true"
+                                    data-netlify="true"
+                                >
+                                    <input type="hidden" name="form-name" value="contact" />
+                                    <div>
+                                        <label className="label">Name</label>
+                                        <br />
+                                        <input className="fields" type="text" name="name" placeholder="Jane Smith" />
+                                    </div>
+                                    <div>
+                                        <label className="label">Email address</label>
+                                        <br />
+                                        <input className="fields" type="email" name="email" placeholder="name@example.com" />
+                                    </div>
+                                    <div>
+                                        <label className="label">Subject</label>
+                                        <br />
+                                        <input className="fields" type="text" name="subject" placeholder="Subject" />
+                                    </div>
+                                    <div>
+                                        <label className="label">Your message</label>
+                                        <br />
+                                        <input type="textarea" name="message" id="message" />
+                                    </div>
                                     <br />
-                                    <input className="fields" type="text" name="name" placeholder="Jane Smith" />
-                                </div>
-                                <div>
-                                    <label className="label">Email address</label>
-                                    <br />
-                                    <input className="fields" type="email" name="email" placeholder="name@example.com" />
-                                </div>
-                                <div>
-                                    <label className="label">Subject</label>
-                                    <br />
-                                    <input className="fields" type="text" name="subject" placeholder="Subject" />
-                                </div>
-                                <div>
-                                    <label className="label">Your message</label>
-                                    <br />
-                                    <input type="textarea" name="message" id="message" />
-                                </div>
-                                <br />
-                                <button id="submit-button" type="submit">
-                                Submit
-                                </button>
-                            </form>
+                                    <button id="submit-button" type="submit">
+                                    Submit
+                                    </button>
+                                </form>
+                            )}
                         </div>
                     </div>
                 </Col >

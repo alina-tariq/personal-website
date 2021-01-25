@@ -57,6 +57,7 @@ $xl: 1200px;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             background: rgba(236, 236, 236, 0.7);
             padding: 20px 0px;
             margin-left: 20px;
@@ -90,6 +91,10 @@ $xl: 1200px;
                 font-size: 14px;
                 font-weight: bold;
                 padding: 5px;
+            }
+
+            #contact-form {
+                color: $text;
             }
         }
 
