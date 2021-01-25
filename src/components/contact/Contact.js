@@ -24,8 +24,11 @@ const Contact = () => {
                         </div>
                         <div id="form">
                             {success && (
-                                <div>
-                                    <h2 id="contact-form">Thanks for your message!</h2>
+                                <div id="greeting">
+                                    <h2 id="contact-form">
+                                        Thanks for your message! <br />
+                                        I'll be sure to get back to you soon!
+                                    </h2>
                                 </div>
                             )}
                             {!success && (

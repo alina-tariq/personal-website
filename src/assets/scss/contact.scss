@@ -102,8 +102,18 @@ $xxl: 2200px;
                 padding: 5px;
             }
 
-            #contact-form {
-                color: $text;
+            #greeting {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                #contact-form {
+                    color: $text;
+                    padding: 0px 20px;
+                }
             }
         }
 
