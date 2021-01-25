@@ -8,12 +8,14 @@ const Main = () => {
             <Container fluid>
                 <Row>
                     <Col className="main">
-                        <img src={MyPicture} alt="mypic"/> 
-                        <br />
-                        <h1 id="name">ALINA TARIQ</h1>
-                        <br />
-                        <div id="container">    
-                            <span id="spin"></span>
+                        <div id="header">
+                            <img src={MyPicture} alt="mypic"/> 
+                            <br />
+                            <h1 id="name">ALINA TARIQ</h1>
+                            <br />
+                            <div id="container">    
+                                <span id="spin"></span>
+                            </div>
                         </div>
                     </Col>
                 </Row>
