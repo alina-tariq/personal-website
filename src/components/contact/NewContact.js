@@ -1,24 +1,16 @@
-import React, { useState } from 'react'
-import { navigate } from 'gatsby'
-import { Container, Row, Col, Form} from 'react-bootstrap';
+import React, { useState, useEffect } from 'react'
+import { Container, Row, Col} from 'react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
-import NetlifyForm from 'react-ssg-netlify-forms'
 
 const Contact = () => {
 
-    // Post-Submit Navigate
-    const postSubmit = () => {
-        navigate('/')
-    }
+    const [success, setSuccess] = useState(false);
 
-    // Simple controlled form setup (Control your own state)
-    const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    const [formValues, setFormValues] = useState({
-        name: 'hello there, friend!',
-        email: 'test@example.com',
-        subject: 'what is this',
-        message: 'what is ur concern share with me'
-    })
+    useEffect(() => {
+        if (window.location.search.includes('success=true')) {
+            setSuccess(true);
+        }
+    }, []);
 
     return (
         <Container fluid>
@@ -29,28 +21,30 @@ const Contact = () => {
                         <div id="cat">
                             <img src={Kitty} alt="kitty" id="heading-cat" />
                         </div>
-                        <div id="form">
-                            <NetlifyForm formName="contact" formValues={formValues} postSubmit={postSubmit} >
-                            <Form name="contact" method="post">
-                                <Form.Group>
-                                    <Form.Label className="label">Name</Form.Label>
-                                    <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Email address</Form.Label>
-                                    <input type="email" name="email" value={formValues.email} onChange={handleChange} required />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Subject</Form.Label>
-                                    <input type="text" name="subject" value={formValues.subject} onChange={handleChange} required />
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label className="label">Your message</Form.Label>
-                                    <textarea name="message" value={formValues.message} onChange={handleChange} required />
-                                </Form.Group>
+                        <div>
+                            {success && (
+                                <p style={{ color: "green" }}>Thanks for your message! </p>
+                            )}
+                            <form
+                                name="contact"
+                                method="POST"
+                                data-netlify="true"
+                            >
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p>
+                                    <label>Name:</label>
+                                    <input type="text" label="name" name="name" />
+                                </p>
+                                <p>
+                                    <label>Email:</label>
+                                    <input type="email" label="email" name="email" />
+                                </p>
+                                <p>
+                                    <label>Message:</label>
+                                    <input type="textarea" label="message" name="message" />
+                                </p>
                                 <button type="submit">Send</button>
-                            </Form>
-                            </NetlifyForm>
+                            </form>
                         </div>
                     </div>
                 </Col >
