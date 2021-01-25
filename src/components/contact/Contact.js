@@ -17,6 +17,7 @@ const Contact = () => {
             <Row>
                 <Col className="contact">
                     <h1>Contact Me</h1>
+                    <h2>If you'd prefer to contact me through other means, feel free to reach out on LinkedIn!</h2>
                     <div className="contact-content">
                         <div id="cat">
                             <img src={Kitty} alt="kitty" id="heading-cat" />
