@@ -66,8 +66,8 @@ const About = () => {
                                 </h2>
                             </div>
 
-                            {/*md/lg screens*/}
-                            <div id="circles-container" className="d-none d-md-block d-xl-none">
+                            {/*xs/md/lg screens*/}
+                            <div id="circles-container" className="d-block d-sm-none d-md-block d-xl-none">
                                 <div>
                                     <OverlayTrigger
                                         placement="top"
@@ -124,7 +124,7 @@ const About = () => {
                             </div>
 
                             {/* sm/xl screens */}
-                            <div id="circles-container" className="d-none d-sm-block d-md-none d-lg-none d-xl-block">
+                            <div id="circles-container" className="d-none d-sm-block d-md-none d-xl-block">
                                 <div>
                                     <OverlayTrigger
                                         placement="top"
