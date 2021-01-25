@@ -12,6 +12,7 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+$xxl: 2200px;
 
 #overlay {
     font-size: 15px;
@@ -97,6 +98,15 @@ $xl: 1200px;
             @media screen and (min-width: $md) {
                 width: 45vw;
                 margin: 0px;
+            }
+        }
+
+        @media screen and (min-width: $xxl) {
+            justify-content: center;
+            flex-direction: column;
+
+            #text {
+                padding-bottom: 50px;
             }
         }
     }
