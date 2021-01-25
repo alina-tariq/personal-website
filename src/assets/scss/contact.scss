@@ -37,9 +37,20 @@ $xxl: 2200px;
         font-weight: medium;
         padding-top: 2vh;
         padding-bottom: 4vh;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
         text-align: center;
+
+        a {
+            color: $grey;
+            text-decoration: underline 3px black;
+            text-underline-offset: 3px;
+            white-space: pre;
+
+            &:hover {
+                color: $vermeer;
+            }
+        }
     }
 
     .contact-content {
@@ -95,7 +106,7 @@ $xxl: 2200px;
             }
 
             #submit-button {
-                background-color: $flying;
+                background-color: rgba(27, 27, 28, 0.5);
                 color: $grey;
                 font-size: 14px;
                 font-weight: bold;
