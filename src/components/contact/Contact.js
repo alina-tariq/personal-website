@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col } from '../../../node_modules/react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
 
 const Contact = () => {
@@ -25,9 +25,13 @@ const Contact = () => {
                             {success && (
                                 <p style={{ color: "green" }}>Thanks for your message! </p>
                             )}
-                            <form name="contact" method="post" action="/?success=true"
-                                data-netlify="true">
-                                <input type="hidden" name="form-name" value="the-name-of-the-html-form" />
+                            <form
+                                name="contact"
+                                method="POST"
+                                action="/?success=true"
+                                data-netlify="true"
+                            >
+                                <input type="hidden" name="form-name" value="contact" />
                                 <div>
                                     <label className="label">Name</label>
                                     <br />

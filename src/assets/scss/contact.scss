@@ -18,6 +18,7 @@ $xl: 1200px;
     width: 100%;
     background-color: $flying;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -76,11 +77,11 @@ $xl: 1200px;
 
             #message {
                 font-size: 15px;
-                height: 150px;
                 width: 300px;
-                margin-top: 5px;
+                margin: 5px 0px;
                 background: rgba(33,46,83, 0.5);
                 color: $grey;
+                padding: 0 0 150px 0;
             }
 
             #submit-button {
@@ -111,7 +112,7 @@ $xl: 1200px;
                 }
 
                 #message {
-                    height: 200px;
+                    padding: 0 0 200px 0;
                     width: 350px;
                     font-size: 18px;
                 }
@@ -141,7 +142,7 @@ $xl: 1200px;
                 }
 
                 #message {
-                    height: 250px;
+                    padding: 0 0 250px 0;
                     width: 450px;
                     font-size: 20px;
                 }
