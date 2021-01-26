@@ -1,1 +1,1 @@
-.resume{height:100vh;background:#952637}
+.resume{min-height:100vh;width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;flex-direction:column;background:#952637;padding:50px 10px}.resume .heading{height:150px;margin-top:20px;color:#ececec}.resume .heading #heading-cat{display:inline;height:75px;width:auto;vertical-align:text-bottom}.resume .heading #heading-text{display:inline;font-size:36px;font-weight:700;margin-left:10px;text-transform:uppercase}
