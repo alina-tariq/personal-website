@@ -9,7 +9,7 @@ const ScrollLink = Scroll.Link;
 const NavigationBar = () => {
     return (
         <Navbar collapseOnSelect expand="md" className="navbar" variant="dark" fixed="top">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <img
                     src={Logo}
                     alt="logo"

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Kitty from '../../assets/img/lettercat.png';
-import * as Scroll from 'react-scroll';
 import { Element } from 'react-scroll';
-
-const ScrollLink = Scroll.Link;
+import { animateScroll as scroll } from 'react-scroll';
 
 const Contact = () => {
 
@@ -36,11 +34,6 @@ const Contact = () => {
                                 <div id="form">
                                     {success && (
                                         <div id="greeting">
-                                            <ScrollLink
-                                                to="/projects"
-                                                smooth={true}
-                                                duration={500}
-                                            ></ScrollLink>
                                             <h2 id="contact-form">
                                                 Thanks for your message! <br />
                                                 I'll be sure to get back to you soon!
@@ -76,7 +69,7 @@ const Contact = () => {
                                                 <input type="textarea" name="message" id="message" />
                                             </div>
                                             <br />
-                                            <button id="submit-button" type="submit">
+                                            <button id="submit-button" onClick={scroll.scrollToBottom} type="submit">
                                                 Submit
                                             </button>
                                         </form>
