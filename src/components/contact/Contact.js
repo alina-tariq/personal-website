@@ -46,6 +46,7 @@ const Contact = () => {
                                             method="POST"
                                             action="/?success=true"
                                             data-netlify="true"
+                                            onsubmit={scroll.scrollToBottom}
                                         >
                                             <input type="hidden" name="form-name" value="contact" />
                                             <div>
@@ -69,7 +70,7 @@ const Contact = () => {
                                                 <input type="textarea" name="message" id="message" />
                                             </div>
                                             <br />
-                                            <button id="submit-button" onClick={scroll.scrollToBottom} type="submit">
+                                            <button id="submit-button" type="submit">
                                                 Submit
                                             </button>
                                         </form>

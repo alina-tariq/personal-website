@@ -56,7 +56,6 @@ const About = () => {
                             <img src={Kitty} alt="kitty" id="heading-cat" />
                             <h1 id="heading-text">About Me</h1>
                         </div>
-
                         <div className="about-content">
                             <div id="text">
                                 <br />

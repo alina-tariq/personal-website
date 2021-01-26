@@ -14,6 +14,9 @@ const Projects = () => {
                                 <img src={Cat} alt="cat" id="heading-cat" />
                                 <h1 id="heading-text">Projects</h1>
                             </div>
+                            <div className="projects-content">
+
+                            </div>
                         </Col>
                     </Row>
                 </Container>
