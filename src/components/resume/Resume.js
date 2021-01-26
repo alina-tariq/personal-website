@@ -12,7 +12,7 @@ const Resume = () => {
                         <Col className="resume">
                             <div className="heading">
                                 <img src={Cat} alt="cat" id="heading-cat" />
-                                <h1 id="heading-text">Resumes</h1>
+                                <h1 id="heading-text">Resume</h1>
                             </div>
                         </Col>
                     </Row>
