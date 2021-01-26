@@ -21,14 +21,14 @@ $dgrey: #282828;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        text-align: center;
         flex-direction: column;
-        width: 100%;
+        width: 90vw;
 
         img {
             margin-top: 5vh;
-            height: 25%;
-            width: auto;
+            height: auto;
+            width: 300px;
             padding: 2px;
             border: 5px solid $grey;
             border-radius: 50%;
@@ -48,17 +48,25 @@ $dgrey: #282828;
         #container {
             font-size:42px;
             font-weight:bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            white-space: pre-wrap;
-            margin-top: 1vh;
+            flex-direction: column;
+            max-width: 85vw;
+            overflow-wrap: normal;
         
             #spin {
                 opacity: 1;
                 &:after {
-                    content:"PROGRAMMER";
+                    content:"CODER";
+                    max-width: 85vw;
                     background-color: $haze;
                     color: $grey;
+                    margin: 0px;
                     padding: 5px 15px;
+                    -webkit-box-decoration-break: clone;
+                    box-decoration-break: clone;
                     animation: spin 10s linear infinite;
                 }
             }
