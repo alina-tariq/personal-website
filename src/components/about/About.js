@@ -6,7 +6,7 @@ import Crochet from '../../assets/img/crochet.png';
 import Travel from '../../assets/img/travel.png';
 import Netflix from '../../assets/img/netflix.png';
 import Raptors from '../../assets/img/raptors.png';
-import kitty from '../../assets/img/1stcat.png';
+import Kitty from '../../assets/img/1stcat.png';
 
 const coding = (props) => (
     <Tooltip id="overlay" {...props}>
@@ -51,7 +51,7 @@ const About = () => {
                 <Row>
                     <Col className="about">
                         <div className="heading">
-                            <img src={kitty} alt="kitty" id="heading-cat" />
+                            <img src={Kitty} alt="kitty" id="heading-cat" />
                             <h1 id="heading-text">About Me</h1>
                         </div>
 
