@@ -32,8 +32,14 @@ $xxl: 2200px;
     padding: 50px 10px;
 
     .heading {
-        height: 150px;
+        min-height: 100px;
         margin-top: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
 
         #heading-cat {
             display: inline;

@@ -21,7 +21,7 @@ $xxl: 2200px;
 
 .contact {
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: $flying;
     display: flex;
     justify-content: center;
@@ -34,8 +34,7 @@ $xxl: 2200px;
         color: $grey;
         font-size: 36px;
         font-weight: bold;
-        padding: 0 0px;
-        margin: 0 0px;
+        text-align: center;
         text-transform: uppercase;
     }
 
@@ -70,12 +69,14 @@ $xxl: 2200px;
 
         #cat {
             width: 300px;
+            max-width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
 
             #heading-cat {
                 width: 280px;
+                max-width: 90vw;
                 height: auto;
                 padding: 10px;
                 margin-bottom: 5vh;
@@ -84,6 +85,7 @@ $xxl: 2200px;
 
         #form {
             width: 280px;
+            max-width: 90vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -95,6 +97,7 @@ $xxl: 2200px;
                 font-size: 15px;
                 margin: 5px 0px;
                 width: 250px;
+                max-width: 80vw;
                 background: rgba(33,46,83, 0.5);
                 color: $grey;
                 padding: 2px 3px;
@@ -109,6 +112,7 @@ $xxl: 2200px;
             #message {
                 font-size: 15px;
                 width: 250px;
+                max-width: 80vw;
                 margin: 5px 0px;
                 background: rgba(33,46,83, 0.5);
                 color: $grey;

@@ -8,8 +8,8 @@ $grey: #ECECEC;
 $dgrey: #282828;
 
 .main {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,16 +18,18 @@ $dgrey: #282828;
     padding: 8vh;
 
     #header {
+        margin-top: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: column;
-        width: 90vw;
+        max-width: 90vw;
 
         img {
             height: auto;
             width: 300px;
+            max-width: 90vw;
             padding: 2px;
             border: 5px solid $grey;
             border-radius: 50%;
@@ -47,14 +49,14 @@ $dgrey: #282828;
         #container {
             font-size:42px;
             font-weight:bold;
-            overflow-wrap: normal;
-            height: 0px;
+            height: 130px;
+            max-width: 90vw;
+            word-wrap: break-word;
         
             #spin {
                 opacity: 1;
                 &:after {
                     content:"CODER";
-                    max-width: 85vw;
                     background-color: $haze;
                     color: $grey;
                     margin: 0px;

@@ -8,6 +8,7 @@ $text: rgb(27, 27, 28);
 $grey: #ececec;
 $dgrey: #282828;
 
+$xs: 331px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -21,18 +22,24 @@ $xl: 1200px;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background: $beige;
+    background-color: $guilder;
     padding: 50px 10px;
 
     .heading {
-        height: 150px;
+        min-height: 100px;
         margin-top: 20px;
-        color: $dgrey;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
 
         #heading-cat {
             display: inline;
             height: 75px;
             width: auto;
+            border-radius: 0%;
             vertical-align: text-bottom;
         }
     
@@ -40,8 +47,17 @@ $xl: 1200px;
             display: inline;
             font-size: 36px;
             font-weight: bold;
-            margin-left: 10px;
             text-transform: uppercase;
+        }
+
+        @media screen and (min-width: $xs) {
+            #heading-cat {
+                margin-right: 5px;
+            }
+
+            #heading-text {
+                margin-left: 5px;
+            }
         }
     }
 }
