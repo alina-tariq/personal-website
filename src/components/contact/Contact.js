@@ -12,9 +12,9 @@ class Contact extends React.Component {
     }
 
     changeDiv = () => {
-        this.setState = {
+        this.setState = ({
             success: true
-        }
+        }, () => console.log(this.state.success))
     };
 
     render() {
