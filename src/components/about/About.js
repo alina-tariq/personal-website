@@ -7,6 +7,7 @@ import Travel from '../../assets/img/travel.png';
 import Netflix from '../../assets/img/netflix.png';
 import Raptors from '../../assets/img/raptors.png';
 import Kitty from '../../assets/img/1stcat.png';
+import { Element } from 'react-scroll';
 
 const coding = (props) => (
     <Tooltip id="overlay" {...props}>
@@ -47,6 +48,7 @@ const raptors = (props) => (
 const About = () => {
     return (
         <div>
+            <Element id='/about' name='/about'>
             <Container fluid>
                 <Row>
                     <Col className="about">
@@ -180,6 +182,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
+            </Element>
         </div>
     )
 }
