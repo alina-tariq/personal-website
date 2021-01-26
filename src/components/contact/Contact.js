@@ -48,8 +48,8 @@ class Contact extends React.Component {
                                             <form
                                                 name="contact"
                                                 method="POST"
-                                                action=""
                                                 data-netlify="true"
+                                                onSubmit={this.changeDiv}
                                             >
                                                 <input type="hidden" name="form-name" value="contact"/>
                                                 <div>
@@ -78,7 +78,7 @@ class Contact extends React.Component {
                                                     <input type="textarea" name="message" id="message" required/>
                                                 </div>
                                                 <br />
-                                                <button id="submit-button" type="submit" onClick={this.changeDiv}>
+                                                <button id="submit-button" type="submit">
                                                     Send
                                                 </button>
                                             </form>
