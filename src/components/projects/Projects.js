@@ -19,58 +19,58 @@ const Projects = () => {
                                 <h1 id="heading-text">Projects</h1>
                             </div>
                             <div className="projects-content">
-                                <Card id="cards">
-                                    <Card.Img variant="top" src={Website}/>
-                                    <Card.Body id="card-text">
-                                        <Card.Title>
-                                            <a href="https://github.com/alina-tariq/personal-website">
+                                <a href="https://github.com/alina-tariq/personal-website">
+                                    <Card id="cards">
+                                        <Card.Img variant="top" src={Website}/>
+                                        <Card.Body id="card-text">
+                                            <Card.Title>
                                                 <h1>Personal Website</h1>
-                                            </a>
-                                        </Card.Title>
-                                        <Card.Text>
-                                                <h4>React.js, React Bootstrap</h4>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card id="cards">
-                                    <Card.Img variant="top" src={MindTrack}/>
-                                    <Card.Body id="card-text">
-                                        <Card.Title>
-                                            <a href="https://github.com/alina-tariq/mindtrack">
-                                                <h1>MindTrack</h1>
-                                            </a>
-                                        </Card.Title>
-                                        <Card.Text>
-                                                <h4>HTML, CSS, JavaScript, PHP, SQL</h4>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card id="cards">
-                                    <Card.Img variant="top" src={Mastermind}/>
-                                    <Card.Body id="card-text">
-                                        <Card.Title>
-                                            <a href="https://github.com/alina-tariq/mastermind">
-                                                <h1>Mastermind</h1>
-                                            </a>
-                                        </Card.Title>
-                                        <Card.Text>
-                                                <h4>Python</h4>
-                                            </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card id="cards">
-                                    <Card.Img variant="top" src={Crossword}/>
-                                    <Card.Body id="card-text">
-                                        <Card.Title>
-                                            <a href="https://github.com/alina-tariq/crossword-creator">
-                                                <h1>Crossword Creator</h1>
-                                            </a>
+                                            </Card.Title>
                                             <Card.Text>
-                                                <h4>Python</h4>
+                                                <h4>React.js, React Bootstrap</h4>
                                             </Card.Text>
-                                        </Card.Title>
-                                    </Card.Body>
-                                </Card>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
+                                <a href="https://github.com/alina-tariq/mindtrack">
+                                    <Card id="cards">
+                                        <Card.Img variant="top" src={MindTrack}/>
+                                        <Card.Body id="card-text">
+                                            <Card.Title>
+                                                <h1>MindTrack</h1>
+                                            </Card.Title>
+                                            <Card.Text>
+                                                <h4>HTML, CSS, JavaScript, PHP, SQL</h4>
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
+                                <a href="https://github.com/alina-tariq/mastermind">
+                                    <Card id="cards">
+                                        <Card.Img variant="top" src={Mastermind}/>
+                                        <Card.Body id="card-text">
+                                            <Card.Title>
+                                                    <h1>Mastermind</h1>
+                                            </Card.Title>
+                                            <Card.Text>
+                                                    <h4>Python</h4>
+                                                </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
+                                <a href="https://github.com/alina-tariq/crossword-creator">
+                                    <Card id="cards">
+                                        <Card.Img variant="top" src={Crossword}/>
+                                        <Card.Body id="card-text">
+                                            <Card.Title>
+                                                    <h1>Crossword Creator</h1>
+                                                <Card.Text>
+                                                    <h4>Python</h4>
+                                                </Card.Text>
+                                            </Card.Title>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
                             </div>
                         </Col>
                     </Row>
