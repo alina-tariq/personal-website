@@ -23,9 +23,11 @@ const Contact = () => {
                             <h1>Contact Me</h1>
                             <h2>
                                 Fill out the form below to get in touch with me!
+                                {/*
                                 If you'd prefer to contact me through other means,
                                 you can also reach out and connect with me on&nbsp;
                                 <a href="https://www.linkedin.com/in/alinatariq/">LinkedIn</a>!
+                                */}
                             </h2>
                             <div className="contact-content">
                                 <div id="cat">
