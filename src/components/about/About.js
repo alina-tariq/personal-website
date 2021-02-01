@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Tooltip, OverlayTrigger } from '../../../node_modules/react-bootstrap';
-import Coding from '../../assets/img/coding.png';
+import Escape from '../../assets/img/mystery.png';
 import Library from '../../assets/img/library.png';
 import Crochet from '../../assets/img/crochet.png';
 import Travel from '../../assets/img/travel.png';
@@ -9,39 +9,39 @@ import Raptors from '../../assets/img/raptors.png';
 import Kitty from '../../assets/img/1stcat.png';
 import { Element } from 'react-scroll';
 
-const coding = (props) => (
+const escape = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        I absolute love escape rooms! One of my favourites was a completely dark escape room where you had to rely entirely on your other senses to try and escape.
     </Tooltip>
 );
 
 const crochet = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        Crocheting was a quarantine hobby and I didn't expect to enjoy or stick with it for as long as I have. It's a fun, creative outlet, and my current goal is to make a quilt! 
     </Tooltip>
 );
 
 const library = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        This should go without saying, really, but I love to learn! The subject isn't particularly important, though I really enjoy learning about the arts!
     </Tooltip>
 );
 
 const travel = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        I love travelling and exploring new cities! The pandemic has disrupted that, but I'm currently planning for a trip around Europe for after. 
     </Tooltip>
 );
 
 const netflix = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        I was never a TV/movie person, but a new set of coworkers can really change that about you. Some favourites of mine: Mindhunters, Kingdom (Korean), Burden of Truth.
     </Tooltip>
 );
 
 const raptors = (props) => (
     <Tooltip id="overlay" {...props}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum.
+        Not really sure when/how this happened, probably around 2017, but while watching the games with my brother I also became a huge fan of our team! #WeTheNorth
     </Tooltip>
 );
 
@@ -61,9 +61,13 @@ const About = () => {
                                 <br />
                                 <br />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ex gravida mi gravida dictum. Mauris ultricies mi mauris, vel sollicitudin est aliquet vel. Donec lorem ante, tempus eu elit ac, lobortis volutpat lacus. Integer ac purus et velit molestie vulputate et quis est. Sed condimentum odio turpis, vitae accumsan purus maximus eu. Integer feugiat venenatis eleifend. Etiam pretium sodales eros, ut feugiat quam. Donec dignissim varius ipsum eu egestas. Mauris tempus elit vitae erat rutrum, vitae imperdiet urna faucibus. Nulla vitae fermentum elit. Fusce pretium ligula a dolor pellentesque scelerisque. Sed finibus est eget sagittis interdum. Nulla tincidunt enim sed efficitur viverra. Curabitur id malesuada diam.
-
-                                    Sed ante ligula, fringilla dictum orci eu, interdum placerat velit. Vestibulum vestibulum metus ac nisi finibus pharetra. Vivamus in erat et purus posuere vulputate. Morbi vel ligula vitae tellus condimentum auctor. Nunc ut arcu ac diam rhoncus dignissim. In eget sem dictum leo maximus consectetur. Etiam consectetur auctor interdum. Mauris ac ex mi.
+                                    Hey there! My name’s Alina, I’m from Toronto, Canada, and I’m currently finishing up my 2nd year studying Computer Science at Ryerson University. I am an aspiring full-stack web developer, though I’ve recently also gained an interest in mobile/app development. I’ve worked on a couple small side projects that are listed below so do check those out.
+                                    <br /> 
+                                    <br /> 
+                                    Aside from my love of Computer Science, I also have a background in Neuroscience. (Got DNA tested recently, turns out I’m 100% a science kid!) In relation to that, I currently work in neurological research at The Hospital for Sick Children (SickKids), where we examine semantic language (i.e. the meaning of words) in children with ASD.
+                                    <br /> 
+                                    <br /> 
+                                    Outside of academics and work life, I do have a couple other interests that you can explore on this page. If you find we have something in common, feel free to reach out!
                                 </h2>
                             </div>
                             
@@ -73,9 +77,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="top"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={coding}
+                                        overlay={escape}
                                     >
-                                        <img src={Coding} alt="coding" />
+                                        <img src={Escape} alt="escape room" />
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
@@ -99,9 +103,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="left"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={netflix}
+                                        overlay={travel}
                                     >
-                                        <img src={Netflix} alt="netflix" />
+                                        <img src={Travel} alt="travel" />
                                     </OverlayTrigger>
                                 </div>
 
@@ -117,9 +121,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="bottom"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={travel}
+                                        overlay={netflix}
                                     >
-                                        <img src={Travel} alt="travel" />
+                                        <img src={Netflix} alt="tv" />
                                     </OverlayTrigger>
                                 </div>
                             </div>
@@ -130,9 +134,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="top"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={coding}
+                                        overlay={escape}
                                     >
-                                        <img src={Coding} alt="coding" />
+                                        <img src={Escape} alt="escape room" />
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
@@ -156,9 +160,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="right"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={netflix}
+                                        overlay={travel}
                                     >
-                                        <img src={Netflix} alt="netflix" />
+                                        <img src={Travel} alt="travel" />
                                     </OverlayTrigger>
                                 </div>
 
@@ -174,9 +178,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="bottom"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={travel}
+                                        overlay={netflix}
                                     >
-                                        <img src={Travel} alt="travel" />
+                                        <img src={Netflix} alt="tv" />
                                     </OverlayTrigger>
                                 </div>
                             </div>
@@ -187,9 +191,9 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="top"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={netflix}
+                                        overlay={escape}
                                     >
-                                        <img src={Netflix} alt="netflix" />
+                                        <img src={Escape} alt="escape room" />
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
@@ -212,25 +216,25 @@ const About = () => {
                                     <OverlayTrigger
                                         placement="left"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={travel}
+                                        overlay={netflix}
                                     >
-                                        <img src={Travel} alt="travel" />
+                                        <img src={Netflix} alt="tv" />
                                     </OverlayTrigger>
                                     <OverlayTrigger
                                         placement="right"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={coding}
+                                        overlay={raptors}
                                     >
-                                        <img src={Coding} alt="coding" />
+                                        <img src={Raptors} alt="raptors" />
                                     </OverlayTrigger>
                                 </div>
                                 <div>
                                     <OverlayTrigger
                                         placement="bottom"
                                         delay={{ show: 150, hide: 400 }}
-                                        overlay={raptors}
+                                        overlay={travel}
                                     >
-                                        <img src={Raptors} alt="raptors" />
+                                        <img src={Travel} alt="travel" />
                                     </OverlayTrigger>
                                 </div>
                             </div>
