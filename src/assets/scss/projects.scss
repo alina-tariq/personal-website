@@ -91,7 +91,11 @@ $xl: 1200px;
             }
 
             &:hover {
-                border: 8px solid $guilder;
+                border: 8px solid $haze;
+
+                #card-text {
+                    background-color: $haze;
+                }
                 
             }
         }
