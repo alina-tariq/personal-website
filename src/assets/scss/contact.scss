@@ -201,7 +201,6 @@ $xxl: 2200px;
                 }
 
                 #message {
-                    padding: 0 0 200px 0;
                     width: 350px;
                     font-size: 18px;
                 }
@@ -212,8 +211,6 @@ $xxl: 2200px;
             }
             
         }
-
-
 
         @media screen and (min-width: $xxl) {
             #cat {
