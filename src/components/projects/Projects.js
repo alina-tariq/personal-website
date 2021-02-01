@@ -1,6 +1,10 @@
 import React from 'react';
 import Cat from '../../assets/img/curled.png';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import MindTrack from '../../assets/img/mindtrack.png';
+import Mastermind from '../../assets/img/mastermind.png';
+import Crossword from '../../assets/img/crossword.png';
+import Website from '../../assets/img/website.png';
 import { Element } from 'react-scroll';
 
 const Projects = () => {
@@ -15,7 +19,38 @@ const Projects = () => {
                                 <h1 id="heading-text">Projects</h1>
                             </div>
                             <div className="projects-content">
-
+                                <Card id="cards">
+                                    <Card.Img variant="top" src={Website}/>
+                                    <Card.Body id="card-text">
+                                        <Card.Title>
+                                            <h1>Personal Website</h1>
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                                <Card id="cards">
+                                    <Card.Img variant="top" src={MindTrack}/>
+                                    <Card.Body id="card-text">
+                                        <Card.Title>
+                                            <h1>MindTrack</h1>
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                                <Card id="cards">
+                                    <Card.Img variant="top" src={Mastermind}/>
+                                    <Card.Body id="card-text">
+                                        <Card.Title>
+                                            <h1>Mastermind</h1>
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                                <Card id="cards">
+                                    <Card.Img variant="top" src={Crossword}/>
+                                    <Card.Body id="card-text">
+                                        <Card.Title>
+                                            <h1>Crossword Creator</h1>
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
                             </div>
                         </Col>
                     </Row>
