@@ -9,7 +9,7 @@ const Contact = () => {
 
     useEffect(() => {
         if (window.location.search.includes('success=true')) {
-            alert("Thank you for your message!");
+            alert("Thank you for your messages!");
             setSuccess(true);
         }
     }, []);
