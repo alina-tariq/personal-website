@@ -66,9 +66,66 @@ const About = () => {
                                     Sed ante ligula, fringilla dictum orci eu, interdum placerat velit. Vestibulum vestibulum metus ac nisi finibus pharetra. Vivamus in erat et purus posuere vulputate. Morbi vel ligula vitae tellus condimentum auctor. Nunc ut arcu ac diam rhoncus dignissim. In eget sem dictum leo maximus consectetur. Etiam consectetur auctor interdum. Mauris ac ex mi.
                                 </h2>
                             </div>
+                            
+                            {/*xs/md screens*/}
+                            <div id="circles-container" className="d-block d-sm-none d-md-block d-lg-none">
+                                <div>
+                                    <OverlayTrigger
+                                        placement="top"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={coding}
+                                    >
+                                        <img src={Coding} alt="coding" />
+                                    </OverlayTrigger>
 
-                            {/*xs/md/lg screens*/}
-                            <div id="circles-container" className="d-block d-sm-none d-md-block d-xl-none">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={crochet}
+                                    >
+                                        <img src={Crochet} alt="crochet" />
+                                    </OverlayTrigger>
+                                </div>
+
+                                <div>
+                                    <OverlayTrigger
+                                        placement="right"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={library}
+                                    >
+                                        <img src={Library} alt="library" />
+                                    </OverlayTrigger>
+
+                                    <OverlayTrigger
+                                        placement="left"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={netflix}
+                                    >
+                                        <img src={Netflix} alt="netflix" />
+                                    </OverlayTrigger>
+                                </div>
+
+                                <div>
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={raptors}
+                                    >
+                                        <img src={Raptors} alt="raptors" />
+                                    </OverlayTrigger>
+
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        delay={{ show: 150, hide: 400 }}
+                                        overlay={travel}
+                                    >
+                                        <img src={Travel} alt="travel" />
+                                    </OverlayTrigger>
+                                </div>
+                            </div>
+
+                            {/*lg screens*/}
+                            <div id="circles-container" className="d-none d-lg-block d-xl-none">
                                 <div>
                                     <OverlayTrigger
                                         placement="top"
@@ -97,7 +154,7 @@ const About = () => {
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
-                                        placement="left"
+                                        placement="right"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={netflix}
                                     >
