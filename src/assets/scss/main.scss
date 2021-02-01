@@ -26,7 +26,7 @@ $dgrey: #282828;
         flex-direction: column;
         max-width: 90vw;
 
-        img {
+        #mainimg {
             height: auto;
             width: 300px;
             max-width: 90vw;
@@ -36,7 +36,7 @@ $dgrey: #282828;
             background-color: $grey;
             opacity: 0.85;
         }
-    
+
         #name {
             opacity: 1;
             color: $grey;
@@ -44,6 +44,32 @@ $dgrey: #282828;
             font-weight: bold;
             margin-top: 1.5vh;
             margin-bottom: 1vh;
+        }
+
+        #namelinks {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            #links {
+                display: inline;
+                height: 30px;
+                width: auto;
+                margin: 0px 5px;
+                color: $haze;
+            }
+        
+        }
+
+        #tagline {
+            opacity: 1;
+            color: $grey;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
         }
         
         #container {
@@ -56,7 +82,7 @@ $dgrey: #282828;
             #spin {
                 opacity: 1;
                 &:after {
-                    content:"CODER";
+                    content:"WEB DEVELOPER";
                     background-color: $haze;
                     color: $grey;
                     margin: 0px;
@@ -75,12 +101,15 @@ $dgrey: #282828;
         content:"ESCAPE ROOM LOVER";
     };
     40% {
-        content:"RESEARCHER";
+        content:"TECH ENTHUSIAST";
     };
     60% { 
         content:"TRUE CRIME ADDICT";
     };
     80% {
-        content:"TECH ENTHUSIAST";
+        content:"RESEARCHER";
+    };
+    100% {
+        content:"RAPTORS FAN";
     };
 }
