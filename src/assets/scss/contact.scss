@@ -22,7 +22,7 @@ $xxl: 2200px;
 .contact {
     min-height: 100vh;
     width: 100vw;
-    background-color: $flying;
+    background-color: $guilder;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,6 @@ $xxl: 2200px;
     padding: 50px 10px;
 
     h1 {
-        color: $grey;
         font-size: 36px;
         font-weight: bold;
         text-align: center;
@@ -39,7 +38,6 @@ $xxl: 2200px;
     }
 
     h2 {
-        color: $grey;
         font-weight: medium;
         padding-top: 2vh;
         padding-bottom: 4vh;
@@ -48,13 +46,13 @@ $xxl: 2200px;
         text-align: center;
 
         a {
-            color: $grey;
-            text-decoration: underline 3px black;
+            color: $dgrey; /* grey */
+            text-decoration: underline 3px rgba(236, 236, 236, 0.7);
             text-underline-offset: 3px;
             white-space: pre;
 
             &:hover {
-                color: $vermeer;
+                color: $flying; /*vermeer*/
             }
         }
     }

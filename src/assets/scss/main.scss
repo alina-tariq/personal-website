@@ -70,6 +70,7 @@ $dgrey: #282828;
             font-weight: bold;
             margin-top: 1.5vh;
             margin-bottom: 1.5vh;
+            text-transform: capitalize;
         }
         
         #container {
@@ -82,7 +83,7 @@ $dgrey: #282828;
             #spin {
                 opacity: 1;
                 &:after {
-                    content:"WEB DEVELOPER";
+                    content:"RAPTORS FAN";
                     background-color: $haze;
                     color: $grey;
                     margin: 0px;
@@ -97,6 +98,9 @@ $dgrey: #282828;
 }
 
 @keyframes spin {
+    0% { 
+        content:"WEB DEVELOPER";
+    };
     20% { 
         content:"ESCAPE ROOM LOVER";
     };
@@ -108,8 +112,5 @@ $dgrey: #282828;
     };
     80% {
         content:"RESEARCHER";
-    };
-    100% {
-        content:"RAPTORS FAN";
     };
 }

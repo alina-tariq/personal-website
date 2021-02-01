@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/Navbar/NavigationBar';
 import Main from './components/main/Main';
 import About from './components/about/About';
-import Resume from './components/resume/Resume';
+/*import Resume from './components/resume/Resume';*/
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
@@ -25,9 +25,11 @@ function App() {
       <section>
         <About />
       </section>
+      {/*}
       <section>
         <Resume />
       </section>
+      */}
       <section>
         <Projects />
       </section>

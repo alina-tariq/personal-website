@@ -27,7 +27,8 @@ const NavigationBar = () => {
                         <Nav.Link className="navlinks">
                             About
                         </Nav.Link>
-                    </ScrollLink> 
+                    </ScrollLink>
+                    {/*
                     <ScrollLink 
                         to="/resume"
                         smooth={true} 
@@ -37,6 +38,7 @@ const NavigationBar = () => {
                             Resume
                         </Nav.Link>
                     </ScrollLink>
+                    */}
                     <ScrollLink 
                         to="/projects"
                         smooth={true} 
