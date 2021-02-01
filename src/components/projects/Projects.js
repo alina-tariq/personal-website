@@ -24,6 +24,9 @@ const Projects = () => {
                                     <Card.Body id="card-text">
                                         <Card.Title>
                                             <h1>Personal Website</h1>
+                                            <Card.Text>
+                                                <h4>React.js, React Bootstrap</h4>
+                                            </Card.Text>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
@@ -33,6 +36,9 @@ const Projects = () => {
                                         <Card.Title>
                                             <h1>MindTrack</h1>
                                         </Card.Title>
+                                        <Card.Text>
+                                                <h4>HTML, CSS, JavaScript, PHP, SQL</h4>
+                                        </Card.Text>
                                     </Card.Body>
                                 </Card>
                                 <Card id="cards">
@@ -41,6 +47,9 @@ const Projects = () => {
                                         <Card.Title>
                                             <h1>Mastermind</h1>
                                         </Card.Title>
+                                        <Card.Text>
+                                                <h4>Python</h4>
+                                            </Card.Text>
                                     </Card.Body>
                                 </Card>
                                 <Card id="cards">
@@ -48,6 +57,9 @@ const Projects = () => {
                                     <Card.Body id="card-text">
                                         <Card.Title>
                                             <h1>Crossword Creator</h1>
+                                            <Card.Text>
+                                                <h4>Python</h4>
+                                            </Card.Text>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
