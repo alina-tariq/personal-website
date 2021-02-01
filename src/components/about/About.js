@@ -71,7 +71,7 @@ const About = () => {
                                 </h2>
                             </div>
                             
-                            {/*xs/md screens*/}
+                            {/*xs screens*/}
                             <div id="circles-container" className="d-block d-sm-none d-md-block d-lg-none">
                                 <div>
                                     <OverlayTrigger
@@ -93,7 +93,7 @@ const About = () => {
 
                                 <div>
                                     <OverlayTrigger
-                                        placement="right"
+                                        placement="top"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={library}
                                     >
@@ -101,7 +101,7 @@ const About = () => {
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
-                                        placement="left"
+                                        placement="top"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={travel}
                                     >
@@ -111,7 +111,7 @@ const About = () => {
 
                                 <div>
                                     <OverlayTrigger
-                                        placement="bottom"
+                                        placement="top"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={raptors}
                                     >
@@ -119,7 +119,7 @@ const About = () => {
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
-                                        placement="bottom"
+                                        placement="top"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={netflix}
                                     >
@@ -128,8 +128,8 @@ const About = () => {
                                 </div>
                             </div>
 
-                            {/*lg screens*/}
-                            <div id="circles-container" className="d-none d-lg-block d-xl-none">
+                            {/*md/lg screens*/}
+                            <div id="circles-container" className="d-none d-md-block d-xl-none">
                                 <div>
                                     <OverlayTrigger
                                         placement="top"
@@ -150,7 +150,7 @@ const About = () => {
 
                                 <div>
                                     <OverlayTrigger
-                                        placement="left"
+                                        placement="right"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={library}
                                     >
@@ -158,7 +158,7 @@ const About = () => {
                                     </OverlayTrigger>
 
                                     <OverlayTrigger
-                                        placement="right"
+                                        placement="left"
                                         delay={{ show: 150, hide: 400 }}
                                         overlay={travel}
                                     >
