@@ -90,6 +90,7 @@ $dgrey: #282828;
                     padding: 5px 15px;
                     -webkit-box-decoration-break: clone;
                     box-decoration-break: clone;
+                    -webkit-animation: spin 10s linear infinite;
                     animation: spin 10s linear infinite;
                 }
             }
@@ -98,24 +99,6 @@ $dgrey: #282828;
 }
 
 @keyframes spin {
-    0% { 
-        content:"WEB DEVELOPER";
-    };
-    20% { 
-        content:"ESCAPE ROOM LOVER";
-    };
-    40% {
-        content:"TECH ENTHUSIAST";
-    };
-    60% { 
-        content:"TRUE CRIME ADDICT";
-    };
-    80% {
-        content:"RAPTORS FAN";
-    };
-}
-
-@-webkit-keyframes spin {
     0% { 
         content:"WEB DEVELOPER";
     };
