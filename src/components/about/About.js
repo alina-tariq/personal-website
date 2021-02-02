@@ -64,7 +64,7 @@ const About = () => {
                                     Hey there! My name’s Alina, I’m from Toronto, Canada, and I’m currently finishing up my 2nd year studying Computer Science at Ryerson University. I am an aspiring full-stack web developer, though I’ve recently also gained an interest in mobile/app development. I’ve worked on a couple small side projects that are listed below so do check those out.
                                     <br /> 
                                     <br /> 
-                                    Aside from my love of Computer Science, I also have a background in Neuroscience. (Got DNA tested recently, turns out I’m 100% a science kid!) In relation to that, I currently work in neurological research at The Hospital for Sick Children (SickKids), where we examine semantic language (i.e. the meaning of words) in children with ASD.
+                                    Aside from my love of Computer Science, I also have a background in Neuroscience. In relation to that, I currently work in neurological research at The Hospital for Sick Children (SickKids), where we examine semantic language (i.e. the meaning of words) in children with ASD.
                                     <br /> 
                                     <br /> 
                                     Outside of academics and work life, I do have a couple other interests that you can explore on this page. If you find we have something in common, feel free to reach out!
