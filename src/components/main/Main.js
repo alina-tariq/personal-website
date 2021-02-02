@@ -29,7 +29,7 @@ const Main = () => {
                             <h2 id="tagline">CS Student with Background in Neuroscience</h2>
                             <br />
                             <div id="container">    
-                                <span id="spin"></span>
+                                <div id="spin" />
                             </div>
                         </div>
                     </Col>
