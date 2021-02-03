@@ -72,7 +72,7 @@ const About = () => {
                             </div>
                             
                             {/*xs screens*/}
-                            <div id="circles-container" className="d-block d-sm-none d-md-block d-lg-none">
+                            <div id="circles-container" className="d-block d-sm-none">
                                 <div>
                                     <OverlayTrigger
                                         placement="top"

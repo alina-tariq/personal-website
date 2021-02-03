@@ -84,7 +84,6 @@ $dgrey: #282828;
                 opacity: 1;
                 -webkit-opacity: 1;
                 &:after {
-                    -webkit-content: "WEB DEVELOPER";
                     content:"WEB DEVELOPER";
                     background-color: $haze;
                     color: $grey;
@@ -115,23 +114,5 @@ $dgrey: #282828;
     };
     80% {
         content:"RAPTORS FAN";
-    };
-}
-
-@-webkit-keyframes spin {
-    0% { 
-        -webkit-content:"WEB DEVELOPER";
-    };
-    20% { 
-        -webkit-content:"ESCAPE ROOM LOVER";
-    };
-    40% {
-        -webkit-content:"TECH ENTHUSIAST";
-    };
-    60% { 
-        -webkit-content:"TRUE CRIME ADDICT";
-    };
-    80% {
-        -webkit-content:"RAPTORS FAN";
     };
 }
