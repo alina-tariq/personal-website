@@ -15,10 +15,10 @@ export default function Experience() {
                     </div>
                     <div className="md:w-3/5 w-full flex flex-col items-center justify-center text-left
                     font-Merriweather md:pl-20 xs:pl-10 pl-8">
-                        <ol class="relative border-l-2 border-amber-500 mt-2">
+                        <ol class="relative border-l-4 border-amber-500 mt-2">
                             <li class="lg:mt-10 md:mt-8 mt-5 mb-5 ml-6 text-white">
-                                <span class="absolute flex items-center justify-center rounded-full ring-2 ring-amber-500
-                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-10 h-10 -left-5">
+                                <span class="absolute flex items-center justify-center rounded-full ring-4 ring-amber-500
+                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
                                         src={require("../assets/cognixion.jpeg")}
@@ -51,8 +51,8 @@ export default function Experience() {
                                 </div>
                             </li>
                             <li class="mb-5 ml-6 text-white">
-                                <span class="absolute flex items-center justify-center rounded-full ring-2 ring-amber-500
-                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-10 h-10 -left-5">
+                                <span class="absolute flex items-center justify-center rounded-full ring-4 ring-amber-500
+                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
                                         src={require("../assets/rcmp.jpeg")}
@@ -69,8 +69,8 @@ export default function Experience() {
                                 </div>
                             </li>
                             <li class="mb-5 ml-6 text-white">
-                                <span class="absolute flex items-center justify-center rounded-full ring-2 ring-amber-500
-                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-10 h-10 -left-5">
+                                <span class="absolute flex items-center justify-center rounded-full ring-4 ring-amber-500
+                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
                                         src={require("../assets/cognixion.jpeg")}
@@ -91,8 +91,8 @@ export default function Experience() {
                                 </div>
                             </li>
                             <li class="xs:mb-5 mb-2 ml-6 text-white">
-                                <span class="absolute flex items-center justify-center rounded-full ring-2 ring-amber-500
-                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-10 h-10 -left-5">
+                                <span class="absolute flex items-center justify-center rounded-full ring-4 ring-amber-500
+                                lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
                                         src={require("../assets/sickkids.jpeg")}

@@ -11,13 +11,14 @@ module.exports = {
         DaiBanna: ["Dai Banna SIL", "serif"],
         Merriweather: ["Merriweather", "serif"],
         Sacramento: ["Sacramento", "cursive"],
+        Caveat: ["Caveat", "cursive"],
       },
       backgroundImage: {
         'main': "url('./assets/main.jpeg')",
         'mountains': "url('./assets/mountains-2.jpeg')",
       },
       screens: {
-        'xs': "550px",
+        'xs': "500px",
       },
       colors: {
         'regal-blue': '#0C467F',
