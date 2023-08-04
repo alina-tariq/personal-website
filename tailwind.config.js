@@ -18,7 +18,9 @@ module.exports = {
         'mountains': "url('./assets/mountains-2.jpeg')",
       },
       screens: {
+        'md': "850px",
         'xs': "500px",
+        'xxs': "300px",
       },
       colors: {
         'regal-blue': '#0C467F',
