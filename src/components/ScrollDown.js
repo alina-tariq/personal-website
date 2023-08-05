@@ -6,7 +6,7 @@ export default function ScrollDown() {
     const scrollDown = useRef();
 
     useEffect(() => {
-        gsap.to(scrollDown.current, {opacity: 1, duration: 1, delay: 2.5}); // fades in 2.5 seconds later
+        gsap.to(scrollDown.current, {opacity: 1, duration: 1, delay: 2.75}); // fades in 2.5 seconds later
         gsap.to(scrollDown.current, { y: 15, ease: "power1.inOut", repeat: -1, yoyo: true }); // up and down motion
     });
 

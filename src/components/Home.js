@@ -17,7 +17,7 @@ export default function Home() {
 
     // fades in introduction
     useEffect(() => {
-        gsap.to(fadeIn.current, {opacity: 1, duration: 3, delay: 1.25});
+        gsap.to(fadeIn.current, {opacity: 1, duration: 3, delay: 1.75});
     })
 
     return (
@@ -60,23 +60,11 @@ export default function Home() {
                 {/* introduction div */}
                 <div className="flex flex-col opacity-0" ref={fadeIn}>
                     <h3 className="font-Merriweather sm:text-2xl xs:text-xl xxs:text-lg text-base font-bold mx-auto text-stone-100
-                    md:pt-10 xs:pt-6 pt-4 lg:px-32 md:px-10 px-4">
-                        <TypeAnimation
-                            sequence={[
-                                ' ',
-                                50,
-                                () => { },
-                            ]}
-                            wrapper="span"
-                            cursor={false}
-                            repeat={0}
-                            speed={25}
-                            omitDeletionAnimation={true}
-                        />
-                        i'm a developer currently based in toronto. i used to work with the human brain studying
-                        language processing, but now i 
+                    md:pt-10 xs:pt-6 pt-4 lg:px-20 md:px-10 px-4">
+                        i'm a developer currently based in toronto. i used to work with brain code to understand language
+                        processing, but now i 
                         <span className="font-Caveat sm:text-3xl xxs:text-2xl text-xl ml-1 sm:mr-3 mr-2">(mostly)</span>
-                        work with computer languages.
+                        work with computer code to build accessible and innovative products. 
                     </h3>
                 </div>
                 <ScrollDown />
@@ -85,4 +73,3 @@ export default function Home() {
         </div>
     );
 }
-
