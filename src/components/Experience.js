@@ -21,7 +21,7 @@ export default function Experience() {
                                 lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
-                                        src={require("../assets/cognixion.jpeg")}
+                                        src={require("../assets/img/cognixion.jpeg")}
                                         alt="Cognixion Logo"
                                     />
                                 </span>
@@ -59,7 +59,7 @@ export default function Experience() {
                                 lg:w-14 lg:h-14 lg:-left-7 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
-                                        src={require("../assets/rcmp.jpeg")}
+                                        src={require("../assets/img/rcmp.jpeg")}
                                         alt="RCMP Logo"
                                     />
                                 </span>
@@ -77,7 +77,7 @@ export default function Experience() {
                                 lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
-                                        src={require("../assets/cognixion.jpeg")}
+                                        src={require("../assets/img/cognixion.jpeg")}
                                         alt="Cognixion Logo"
                                     />
                                 </span>
@@ -99,7 +99,7 @@ export default function Experience() {
                                 lg:w-14 lg:h-14 lg:-left-7 sm:w-12 sm:h-12 sm:-left-6 w-12 h-12 -left-6">
                                     <img
                                         className="rounded-full w-full"
-                                        src={require("../assets/sickkids.jpeg")}
+                                        src={require("../assets/img/sickkids.jpeg")}
                                         alt="SickKids Logo"
                                     />
                                 </span>
