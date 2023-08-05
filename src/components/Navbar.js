@@ -1,7 +1,7 @@
+import { useState, useEffect } from 'react';
 import { Disclosure } from '@headlessui/react'
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { animateScroll as scroll } from 'react-scroll';
 
 const navigation = [
   { name: 'about', href: '/about', hover: 'text-stone-100' },
@@ -16,11 +16,38 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [isTransparent, setIsTransparent] = useState(true);
+  const [isSky, setIsSky] = useState(true);
+  const transparentNavbar = "mx-auto max-w-8xl px-2 sm:px-6 lg:px-8";
+  const visibleNavbar = "bg-gray-900 mx-auto max-w-8xl px-2 sm:px-6 lg:px-8";
+  const skyDropDown = "bg-sky-800 bg-opacity-50 space-y-1 px-6 pb-3 pt-2 font-DaiBanna";
+  const grayDropDown = "bg-gray-900 bg-opacity-50 space-y-1 px-6 pb-3 pt-2 font-DaiBanna";
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsTransparent(false);
+      } else {
+        setIsTransparent(true);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > Math.round(window.innerHeight / 2)) {
+        setIsSky(false);
+      } else {
+        setIsSky(true);
+      }
+    });
+  }, []);
+
   return (
     <Disclosure as="nav" className="w-full fixed top-0 z-50 ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
+          <div className={isTransparent ? transparentNavbar : visibleNavbar}>
             <div className="relative flex h-24 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
@@ -42,7 +69,7 @@ export default function Navbar() {
                     src={require("../assets/img/logo.png")}
                     alt="Logo"
                     onClick={scroll.scrollToTop}
-                    style={{cursor:'pointer'}}
+                    style={{ cursor: 'pointer' }}
                   />
                 </div>
                 <div className="hidden lg:ml-6 lg:block">
@@ -55,7 +82,7 @@ export default function Navbar() {
                           'rounded-md px-1 py-1 text-2xl font-bold'
                         )}
                       >
-                        <Link activeClass="text-amber-500 rounded-md" smooth={'easeInOutQuint'} spy to={item.href}>
+                        <Link activeClass="text-amber-500 rounded-md" smooth={true} spy to={item.href}>
                           {item.name}
                         </Link>
                       </a>
@@ -66,8 +93,9 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* Mobile panel */}
           <Disclosure.Panel className="lg:hidden">
-            <div className="space-y-1 px-6 pb-3 pt-2 font-DaiBanna">
+            <div className={isSky ? skyDropDown : grayDropDown}>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
