@@ -3,11 +3,10 @@ import { AndroidstudioPlain, AngularjsPlain, CPlain, Css3Plain, DjangoPlain, Gra
 import { CircleStackIcon } from "@heroicons/react/24/outline";
 
 export default function Skills() {
-    const iconDiv = "";
     const iconImage = "w-20 h-auto flex flex-col items-center justify-top m-2";
     const iconHeader = "text-amber-500 font-bold sm:text-xl text-lg pb-2";
-    const iconText = "pt-2 font-semibold";
-    const iconColour = "#a5f3fc";
+    const iconText = "text-white pt-2 font-semibold";
+    const iconColour = "white";
     const iconSize = "3em";
 
     return (
@@ -23,8 +22,7 @@ export default function Skills() {
                             </h1>
                         </p>
                     </div>
-                    <div className="md:w-3/5 w-full flex flex-col md:text-left text-center
-                    text-stone-300 font-Merriweather">
+                    <div className="md:w-3/5 w-full flex flex-col md:text-left text-center font-Merriweather">
                         <div className="flex flex-col justify-center items-center text-center md:pt-10 xs:pt-8 pt-6">
                             <div className={iconHeader}>
                                 Languages:
