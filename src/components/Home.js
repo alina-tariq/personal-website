@@ -24,13 +24,6 @@ export default function Home() {
         <div className="h-screen bg-gradient-to-b from-sky-700 to-gray-900 grid grid-cols-1 grid-flow-row 
             px-8 pb-8 sm:pt-32 pt-24">
             <div className="flex flex-col items-center justify-center text-center">
-                {/* <img
-                        className="rounded-full border-4 border-stone-100 bg-gradient-to-t from-red-500
-                        to-gray-900 w-56"
-                        alt="me"
-                        src={require("../assets/icon.png")}
-                    /> */}
-                {/* greeting div */}
                 <div className="">
                     <h1 className="font-Sacramento lg:text-9xl xs:text-8xl xxs:text-7xl text-6xl font-extrabold mx-auto
                         text-transparent pt-5 md:pb-8 pb-4 xs:px-16 px-5 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500
@@ -59,7 +52,7 @@ export default function Home() {
                 </div>
                 {/* introduction div */}
                 <div className="flex flex-col opacity-0" ref={fadeIn}>
-                    <h3 className="font-Merriweather sm:text-2xl xs:text-xl xxs:text-lg text-base font-bold mx-auto text-stone-100
+                    <h3 className="font-Merriweather sm:text-2xl xs:text-xl xxs:text-lg text-base font-bold mx-auto text-white
                     md:pt-10 xs:pt-6 pt-4 lg:px-20 md:px-10 px-4">
                         i'm a developer currently based in toronto. i used to work with brain code to understand language
                         processing, but now i 

@@ -105,9 +105,6 @@ export default function Experience() {
                                 </div>
                             </li>
                         </ol>
-                        {/* <h3 className="font-DaiBanna text-2xl font-bold mx-auto text-stone-100 pt-2 px-20">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ex ligula, sed efficitur nulla lobortis quis. Duis pellentesque sit amet mi a laoreet. Proin quam lectus, ultricies eget massa et, gravida semper elit. Praesent pretium quam quam, in consectetur justo sollicitudin sit amet. 
-                        </h3> */}
                     </div>
                 </div>
             </div>
