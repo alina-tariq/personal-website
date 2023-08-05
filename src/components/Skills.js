@@ -4,7 +4,7 @@ import { CircleStackIcon } from "@heroicons/react/24/outline";
 
 export default function Skills() {
     const iconImage = "w-20 h-auto flex flex-col items-center justify-top m-2";
-    const iconHeader = "text-amber-500 font-bold sm:text-xl text-lg pb-2";
+    const iconHeader = "text-pink-300 font-bold sm:text-xl text-lg pb-2";
     const iconText = "text-white pt-2 font-semibold";
     const iconColour = "white";
     const iconSize = "3em";
