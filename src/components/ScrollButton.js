@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronDoubleUpIcon } from "@heroicons/react/24/outline";
 import { animateScroll as scroll } from 'react-scroll';
 
