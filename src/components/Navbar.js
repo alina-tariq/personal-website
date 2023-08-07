@@ -78,8 +78,8 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(item.hover, 'hover:border-2 hover:border-amber-500',
-                          'rounded-md px-1 py-1 text-2xl font-bold'
+                        className={classNames(item.hover, 'hover:text-amber-500',
+                          'px-1 text-2xl font-bold'
                         )}
                       >
                         <Link activeClass="text-amber-500 rounded-md" smooth={true} spy to={item.href}>
