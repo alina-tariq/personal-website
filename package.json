@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://alina-tariq.github.io",
+  "homepage": "https://alina-tariq.github.io/personal-website",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.0",
