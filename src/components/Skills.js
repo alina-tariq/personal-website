@@ -17,7 +17,7 @@ export default function Skills() {
                             </h1>
                         </p>
                     </div>
-                    <div className="md:w-3/5 w-full flex flex-col md:text-left text-center font-Merriweather md:pr-6">
+                    <div className="md:w-3/5 w-full flex flex-col text-center font-Merriweather">
                         <div className={badgeSectionDiv}>
                             <div className={badgeSectionTitle}>
                                 Languages:
