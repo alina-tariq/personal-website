@@ -5,7 +5,7 @@ import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentD
 export default function Contact() {
     const formArea = "block w-full p-2.5 text-sm shadow-sm rounded-lg text-gray-900";
     
-    const [state, handleSubmit] = useForm(""); 
+    const [state, handleSubmit] = useForm("xqkvpzrn"); 
     
     if (state.succeeded) {
         document.getElementById("submission").innerHTML = "Message sent :)";
