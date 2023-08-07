@@ -7,7 +7,7 @@ const badgeDiv = "flex flex-wrap justify-center text-center";
 const badgeImage = "w-20 h-auto flex flex-col items-center justify-top m-2";
 const badgeSize = "3em";
 const badgeColour = "white";
-const badgeText = "text-white pt-2 font-semibold";
+const badgeText = "pt-2 font-semibold";
 
 export {
     badgeSectionDiv,
