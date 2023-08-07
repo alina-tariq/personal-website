@@ -13,7 +13,7 @@ export default function About() {
                             </h1>
                         </p>
                     </div>
-                    <div className={contentDiv}>
+                    <div className={contentDiv.concat(" md:text-left text-center")}>
                         <h3 className={content}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ex ligula, sed efficitur nulla lobortis quis. Duis pellentesque sit amet mi a laoreet. Proin quam lectus, ultricies eget massa et, gravida semper elit. Praesent pretium quam quam, in consectetur justo sollicitudin sit amet. 
                         </h3>

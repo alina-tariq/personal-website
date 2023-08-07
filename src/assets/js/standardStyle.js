@@ -6,8 +6,8 @@ const sectionTitleDiv = "md:w-2/5 w-full flex flex-col items-center justify-cent
 const sectionTitleUnderline = "text-stone-100 underline underline-offset-[10px]";
 const sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-2 pb-5 px-8 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500";
 
-const contentDiv = "md:w-3/5 w-full flex flex-col items-center justify-center md:text-left text-center";
-const content = "font-DaiBanna lg:text-2xl text-xl font-medium mx-auto text-white md:pt-2 md:px-16 sm:px-8 xxs:px-6 px-4";
+const contentDiv = "md:w-3/5 w-full flex flex-col items-center justify-center font-Merriweather";
+const content = "lg:text-xl sm:text-lg text-base font-medium mx-auto text-white md:pt-2 md:px-16 sm:px-8 xxs:px-6 px-4";
 
 export {
     section,

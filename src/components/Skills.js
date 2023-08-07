@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
 import { AndroidstudioPlain, AngularjsPlain, CPlain, Css3Plain, DjangoPlain, Html5Plain, JavaPlain, JavascriptPlain, JiraPlain, JupyterPlainWordmark, PythonPlain, PhpPlain } from 'devicons-react';
 import { CircleStackIcon } from "@heroicons/react/24/outline";
-import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle } from "../assets/js/standardStyle";
+import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { badgeSectionDiv, badgeSectionPadding, badgeSectionTitle, badgeDiv, badgeImage, badgeSize, badgeColour, badgeText} from "../assets/js/skillsStyle";
 
 export default function Skills() {
@@ -17,7 +17,7 @@ export default function Skills() {
                             </h1>
                         </p>
                     </div>
-                    <div className="md:w-3/5 w-full flex flex-col text-center font-Merriweather">
+                    <div className={contentDiv}>
                         <div className={badgeSectionDiv}>
                             <div className={badgeSectionTitle}>
                                 Languages:

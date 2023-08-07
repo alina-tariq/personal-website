@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle  } from "../assets/js/standardStyle";
+import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { orgLogo, orgLogoShape, orgName, posTitle, langDiv, langCard, timeline, firstExp, midExp, lastExp } from "../assets/js/experienceStyle";
 
 export default function Experience() {
@@ -14,8 +14,7 @@ export default function Experience() {
                             </h1>
                         </p>
                     </div>
-                    <div className="md:w-3/5 flex flex-col items-center justify-center text-left
-                    font-Merriweather md:pl-0 pl-12">
+                    <div className={contentDiv.concat(" text-left md:pl-0 pl-12")}>
                         <ol class={timeline}>
                             <li className={firstExp}>
                                 <span className={orgLogo}>
