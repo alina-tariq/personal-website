@@ -24,7 +24,7 @@ export default function Contact() {
                     </div>
                     <div className={contentDiv}>
                         <section className={content.concat(" text-center")}>
-                            <div className="px-10 xl:w-3/5 xs:w-3/4 w-full rounded-lg border-4 border-white inline-block">
+                            <div className="px-10 xl:w-3/5 xs:w-3/4 w-full rounded-lg border-4 border-amber-500 inline-block">
                                 <form onSubmit={handleSubmit} className="space-y-6 pt-4">
                                     <p>
                                         See something that piqued your interest? Then, why not get in touch? We can chat about my
