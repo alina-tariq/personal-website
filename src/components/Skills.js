@@ -153,7 +153,7 @@ export default function Skills() {
                                 </div>
                                 <div className={badgeImage} ref={angularRef}>
                                     {angularHovered
-                                        ? <AngularjsOriginal className="border-4 border-gray-200" size={badgeSize} />
+                                        ? <AngularjsOriginal size={badgeSize} />
                                         : <AngularjsPlain color={badgeColour} size={badgeSize} />
                                     }
                                     <p className={badgeText}>Angular JS</p>
