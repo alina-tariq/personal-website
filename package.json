@@ -6,6 +6,7 @@
     "@formspree/react": "^2.5.0",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
+    "@react-hooks-library/core": "^0.5.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/user-event": "^13.5.0",
     "devicons-react": "^1.2.6",
