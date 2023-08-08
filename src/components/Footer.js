@@ -2,8 +2,8 @@ import { content } from "../assets/js/standardStyle";
 
 export default function Footer() {
     return (
-        <div className="h-auto bg-gray-900 pt-16">
-            <div className={content.concat(" text-amber-500 text-center pb-6 font-DaiBanna")}>
+        <div className="h-auto bg-gray-900 md:pt-10 pt-5">
+            <div className={content.concat(" text-amber-500 text-center pb-4 font-DaiBanna")}>
                 <div>
                     Coded with
                     <svg
