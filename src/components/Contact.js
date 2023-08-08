@@ -4,8 +4,8 @@ import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentD
 
 export default function Contact() {
     const formArea = "block w-full p-2.5 text-sm shadow-sm rounded-lg text-gray-900";
-    
-    const [state, handleSubmit] = useForm("xqkvpzrn"); 
+    const formID = process.env.REACT_APP_FORM_ID;
+    const [state, handleSubmit] = useForm(formID); 
     
     if (state.succeeded) {
         document.getElementById("submission").innerHTML = "Message sent :)";
@@ -25,24 +25,24 @@ export default function Contact() {
                     <div className={contentDiv}>
                         <section className={content.concat(" text-center")}>
                             <div className="py-5 px-10 xl:w-3/5 xs:w-3/4 w-full border-4 border-gray-200 inline-block">
-                                <form onSubmit={handleSubmit} class="space-y-6">
+                                <form onSubmit={handleSubmit} className="space-y-6">
                                     <p>
                                         See something that piqued your interest? Then, why not get in touch? We can chat about my
                                         previous work experience, the product your team is working on, or even the curse plaguing your
                                         favourite sports team.
                                     </p>
                                     <div>
-                                        <input type="text" id="name" class={formArea} placeholder="name" required />
+                                        <input type="text" id="name" className={formArea} placeholder="name" required />
                                     </div>
                                     <div>
-                                        <input type="email" id="email" name="email" class={formArea} placeholder="email" required />
+                                        <input type="email" id="email" name="email" className={formArea} placeholder="email" required />
                                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                                     </div>
                                     <div>
-                                        <input type="text" id="subject" class={formArea} placeholder="subject" required />
+                                        <input type="text" id="subject" className={formArea} placeholder="subject" required />
                                     </div>
-                                    <div class="sm:col-span-2">
-                                        <textarea id="message" name="message" rows="5" class={formArea} placeholder="message" required />
+                                    <div className="sm:col-span-2">
+                                        <textarea id="message" name="message" rows="5" className={formArea} placeholder="message" required />
                                         <ValidationError prefix="Message" field="message" errors={state.errors}/>
                                     </div>
                                     <button

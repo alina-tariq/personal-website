@@ -15,7 +15,7 @@ export default function Experience() {
                         </p>
                     </div>
                     <div className={contentDiv.concat(" text-left md:pl-0 pl-12")}>
-                        <ol class={timeline}>
+                        <ol className={timeline}>
                             <li className={firstExp}>
                                 <span className={orgLogo}>
                                     <img
