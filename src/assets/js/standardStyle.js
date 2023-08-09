@@ -24,8 +24,6 @@ isPC
     ? sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-2 pb-5 px-8 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500"
     : sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-2 pb-5 px-8 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 tracking-tighter"
 
-console.log(sectionTitle)
-
 export {
     section,
     sectionTitleDiv, 
