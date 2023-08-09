@@ -20,6 +20,8 @@ export default function Home() {
         gsap.to(fadeIn.current, {opacity: 1, duration: 3, delay: 1.75});
     })
 
+    {console.log(window.navigator.userAgent)}
+
     return (
         <div className="h-screen bg-gradient-to-b from-sky-700 to-gray-900 grid grid-cols-1 grid-flow-row 
             px-8 pb-8 sm:pt-32 pt-24">
