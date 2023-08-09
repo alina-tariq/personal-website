@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
-import { orgLogo, orgLogoShape, orgName, posTitle, langDiv, langCard, timeline, firstExp, midExp, lastExp } from "../assets/js/experienceStyle";
+import { orgLogo, orgLogoShape, orgName, posTitle, posDate, langDiv, langCard, timeline, firstExp, midExp, lastExp } from "../assets/js/experienceStyle";
 
 export default function Experience() {
     return (
@@ -26,6 +26,7 @@ export default function Experience() {
                                 </span>
                                 <h3 className={orgName}>Cognixion</h3>
                                 <p className={posTitle}>Software Developer</p>
+                                <p className={posDate}>Jan 2022 – March 2023</p>
                                 <div className={langDiv}>
                                     <span className={langCard}>
                                         Java
@@ -57,6 +58,7 @@ export default function Experience() {
                                 </span>
                                 <h3 className={orgName}>Royal Canadian Mounted Police</h3>
                                 <p className={posTitle}>Junior Programmer Analyst</p>
+                                <p className={posDate}>Sep 2021 – Dec 2021</p>
                                 <div className={langDiv}>
                                     <span className={langCard}>
                                         Java
@@ -73,6 +75,7 @@ export default function Experience() {
                                 </span>
                                 <h3 className={orgName}>Cognixion</h3>
                                 <p className={posTitle}>Software Developer Intern</p>
+                                <p className={posDate}>May 2021 – Aug 2021</p>
                                 <div className={langDiv}>
                                     <span className={langCard}>
                                         Python
@@ -92,6 +95,7 @@ export default function Experience() {
                                 </span>
                                 <h3 className={orgName}>The Hospital for Sick Children</h3>
                                 <p className={posTitle}>Research Analyst</p>
+                                <p className={posDate}>Mar 2019 – Apr 2021</p>
                                 <div className={langDiv}>
                                     <span className={langCard}>
                                         MATLAB

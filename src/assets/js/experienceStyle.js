@@ -9,6 +9,7 @@ const orgLogoShape = "rounded-full w-full";
 
 const orgName = "lg:text-lg sm:text-base text-sm font-bold";
 const posTitle = "lg:text-lg sm:text-base text-sm";
+const posDate = "lg:text-base sm:text-sm text-xs";
 
 const langDiv = "lg:text-sm text-xs pt-2 flex flex-wrap";
 const langCard = "bg-gradient-to-br from-regal-blue to-regal-purple font-bold mr-2 mb-2 px-2 py-1 rounded";
@@ -21,7 +22,8 @@ export {
     orgLogo, 
     orgLogoShape, 
     orgName, 
-    posTitle, 
+    posTitle,
+    posDate, 
     langDiv, 
     langCard,
 };
