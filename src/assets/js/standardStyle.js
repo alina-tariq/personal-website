@@ -12,8 +12,7 @@ const content = "lg:text-lg sm:text-base text-sm mx-auto md:pt-2 md:px-16 sm:px-
 // fixes Sacramento font spacing issue on non-PC devices
 // let isPC;
 
-{console.log("orientation: " + window.screen.orientation.type)
- console.log("width: " + window.screen.width)
+{console.log("width: " + window.screen.width)
  console.log("height: " + window.screen.height)}
 
 // if (window.screen.orientation.type == 'landscape-primary' && window.screen.width < 1024) {

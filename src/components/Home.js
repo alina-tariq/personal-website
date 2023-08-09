@@ -22,8 +22,7 @@ export default function Home() {
         gsap.to(fadeIn.current, {opacity: 1, duration: 3, delay: 1.75});
     })
 
-    {console.log("orientation: " + window.screen.orientation.type)
-    console.log("width: " + window.screen.width)
+    {console.log("width: " + window.screen.width)
     console.log("height: " + window.screen.height)}
 
     // fixes Sacramento font spacing issue on non-PC devices
