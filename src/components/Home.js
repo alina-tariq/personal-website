@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 export default function Home() {
     const resetWindowScrollPosition = useCallback(() => window.scrollTo(0, 0), [])
     const fadeIn = useRef();
-    let greeting = "font-Sacramento lg:text-9xl xs:text-8xl xxs:text-7xl text-6xl font-[800] mx-auto text-transparent pt-5 md:pb-8 pb-4 xs:px-16 px-5 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] sm:drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]";
+    let greeting = "font-Sacramento lg:text-9xl xs:text-8xl text-7xl font-[800] mx-auto text-transparent pt-5 md:pb-8 pb-4 xs:px-16 px-5 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] sm:drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]";
 
     // scrolls back to top on page refresh
     useEffect(() => {
