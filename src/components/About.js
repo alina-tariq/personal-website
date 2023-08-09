@@ -1,7 +1,24 @@
+import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv, content } from "../assets/js/standardStyle";
+import { BookOpenIcon } from "@heroicons/react/24/solid";
 
 export default function About() {
+    const [isPC, setIsPC] = useState(true);
+
+    // fixes spacing issue on non-PC devices
+     useEffect(() => {
+        if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
+            setIsPC(true);
+        } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
+            setIsPC(true);
+        } else {
+            setIsPC(false);
+        }
+    }, []);
+    
+    isPC ? sectionTitle.concat(" tracking-normal") : sectionTitle.concat(" tracking-tighter");
+
     return (
         <Element id='/about' name='/about'>
             <div className={section}>
