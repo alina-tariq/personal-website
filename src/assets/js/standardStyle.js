@@ -9,6 +9,19 @@ const sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extr
 const contentDiv = "md:w-3/5 w-full flex flex-col items-center justify-center font-Merriweather text-white";
 const content = "lg:text-lg sm:text-base text-sm mx-auto md:pt-2 md:px-16 sm:px-8 xxs:px-6 px-4";
 
+// fixes Sacramento font spacing issue on non-PC devices
+let isPC = true;
+
+if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
+    isPC = true;
+} else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
+    isPC = true;
+} else {
+    isPC = false;
+}
+
+isPC ? sectionTitle.concat(" tracking-normal") : sectionTitle.concat(" tracking-tighter");
+
 export {
     section,
     sectionTitleDiv, 
