@@ -1,8 +1,9 @@
 import { useRef, useState, useEffect } from 'react'
 import { useHover } from '@react-hooks-library/core'
 import { Element } from "react-scroll";
-import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PythonPlain, PythonOriginal, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, SourcetreeOriginal, ReactOriginal} from 'devicons-react';
+import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PythonPlain, PythonOriginal, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, ReactOriginal} from 'devicons-react';
 import { CircleStackIcon } from "@heroicons/react/24/outline";
+import { FaSourcetree } from "react-icons/fa";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { badgeSectionDiv, badgeSectionPadding, badgeSectionTitle, badgeDiv, badgeImage, badgeColour, badgeText} from "../assets/js/skillsStyle";
 
@@ -82,8 +83,31 @@ export default function Skills() {
                                 </div>
                                 <div className={badgeImage} ref={pythonRef}>
                                     {pythonHovered 
-                                        ? <PythonOriginal colour={badgeColour} size={badgeSize} />
-                                        : <PythonPlain color={badgeColour} size={badgeSize} />
+                                        ? <svg 
+                                            viewBox="0 0 48 48"
+                                            height={badgeSize}
+                                        >
+                                            <linearGradient id="goqfu1ZNmEnUrQDJEQ1bUa_l75OEUJkPAk4_gr1" x1="10.458" x2="26.314" y1="12.972" y2="26.277" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#26abe7"></stop><stop offset="1" stop-color="#086dbf"></stop></linearGradient><path fill="url(#goqfu1ZNmEnUrQDJEQ1bUa_l75OEUJkPAk4_gr1)" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2 H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104 c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672 C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498 c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><linearGradient id="goqfu1ZNmEnUrQDJEQ1bUb_l75OEUJkPAk4_gr2" x1="35.334" x2="23.517" y1="37.911" y2="21.034" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#feb705"></stop><stop offset="1" stop-color="#ffda1c"></stop></linearGradient><path fill="url(#goqfu1ZNmEnUrQDJEQ1bUb_l75OEUJkPAk4_gr2)" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2 h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104 c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672 C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498 c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+                                        </svg>
+                                        : <svg 
+                                            viewBox="0,0,256,256"
+                                            height={badgeSize}
+                                        >
+                                            <defs>
+                                                <linearGradient x1="10.458" y1="12.972" x2="26.314" y2="26.277" gradientUnits="userSpaceOnUse" id="color-1_l75OEUJkPAk4_gr1">
+                                                    <stop offset="0" stop-color="#ffffff"></stop>
+                                                    <stop offset="1" stop-color="#ffffff"></stop>
+                                                </linearGradient>
+                                                <linearGradient x1="35.334" y1="37.911" x2="23.517" y2="21.034" gradientUnits="userSpaceOnUse" id="color-2_l75OEUJkPAk4_gr2">
+                                                    <stop offset="0" stop-color="#ffffff"></stop>
+                                                    <stop offset="1" stop-color="#ffffff"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g transform="scale(5.33333,5.33333)">
+                                                <path fill={badgeColour} d="M24.047,5c-1.555,0.005 -2.633,0.142 -3.936,0.367c-3.848,0.67 -4.549,2.077 -4.549,4.67v3.963h9v2h-9.342h-4.35c-2.636,0 -4.943,1.242 -5.674,4.219c-0.826,3.417 -0.863,5.557 0,9.125c0.655,2.661 2.098,4.656 4.735,4.656h3.632v-5.104c0,-2.966 2.686,-5.896 5.764,-5.896h7.236c2.523,0 5,-1.862 5,-4.377v-8.586c0,-2.439 -1.759,-4.263 -4.218,-4.672c0.061,-0.006 -1.756,-0.371 -3.298,-0.365zM19.063,9c0.821,0 1.5,0.677 1.5,1.502c0,0.833 -0.679,1.498 -1.5,1.498c-0.837,0 -1.5,-0.664 -1.5,-1.498c0,-0.822 0.663,-1.502 1.5,-1.502z"></path>
+                                                <path fill={badgeColour} d="M23.078,43c1.555,-0.005 2.633,-0.142 3.936,-0.367c3.848,-0.67 4.549,-2.077 4.549,-4.67v-3.963h-9v-2h9.343h4.35c2.636,0 4.943,-1.242 5.674,-4.219c0.826,-3.417 0.863,-5.557 0,-9.125c-0.656,-2.661 -2.099,-4.656 -4.736,-4.656h-3.632v5.104c0,2.966 -2.686,5.896 -5.764,5.896h-7.236c-2.523,0 -5,1.862 -5,4.377v8.586c0,2.439 1.759,4.263 4.218,4.672c-0.061,0.006 1.756,0.371 3.298,0.365zM28.063,39c-0.821,0 -1.5,-0.677 -1.5,-1.502c0,-0.833 0.679,-1.498 1.5,-1.498c0.837,0 1.5,0.664 1.5,1.498c0,0.822 -0.664,1.502 -1.5,1.502z"></path>
+                                            </g>
+                                        </svg>
                                     }
                                     <p className={badgeText}>Python</p>
                                 </div>
@@ -224,16 +248,39 @@ export default function Skills() {
                                 </div>
                                 <div className={badgeImage} ref={sourcetreeRef}>
                                     {sourcetreeHovered
-                                        ? <SourcetreeOriginal size={badgeSize} />
-                                        : <svg 
-                                            viewBox="0 0 128 128" 
-                                            height={badgeSize}>
-                                            <path
-                                                fill={badgeColour} 
-                                                d="M64 .73C29.114.73.73 29.113.73 64S29.114 127.27 64 127.27c34.888 0 63.27-28.384 63.27-63.27S98.887.73 64 .73zm3.335 120.17v-10.988l27.44-13.9a1.955 1.955 0 001.073-1.747v-6.29a5.98 5.98 0 003.99-6.258 5.978 5.978 0 10-11.892 1.225 5.97 5.97 0 003.99 5.03v5.09l-24.6 12.46v-10.22l10.843-5.017a1.957 1.957 0 001.135-1.773l.02-17.026 20.07-11.276c.617-.346 1-1 1-1.706V53.76a5.974 5.974 0 00-2.57-11.59 5.975 5.975 0 00-1.344 11.59v3.606l-20.07 11.27c-.617.35-1 1-1 1.706l-.02 16.92-8.068 3.73V54.2l16.884-8.257a1.95 1.95 0 001.097-1.755v-6.29a5.978 5.978 0 003.99-6.26 5.976 5.976 0 00-6.56-5.33 5.975 5.975 0 00-5.332 6.56 5.964 5.964 0 003.99 5.027v5.07l-14.068 6.877V28.598a5.977 5.977 0 10-7.902-5.03 5.97 5.97 0 003.988 5.028V63.24l-9.943-5.224V42.28a1.95 1.95 0 00-.767-1.552l-6.802-5.21a5.978 5.978 0 10-2.61 2.928l6.265 4.802V59.2c0 .728.404 1.395 1.048 1.733l12.81 6.73v12.724l-21.37-9.884.292-7.742a1.956 1.956 0 00-1.063-1.815l-9.797-5.025c.147-.63.2-1.292.13-1.97a5.978 5.978 0 00-11.892 1.227 5.977 5.977 0 006.56 5.33 5.91 5.91 0 003.1-1.268l9.004 4.616-.295 7.8c-.03.79.417 1.52 1.133 1.85L63.42 84.7v9.084a1.98 1.98 0 000 .516v26.693a57.53 57.53 0 01-6.093-.387V97.66c0-.766-.445-1.46-1.14-1.778l-15.182-6.987a5.974 5.974 0 00-6.563-6.527 5.976 5.976 0 104.924 10.08l14.047 6.463v21.092C27.022 115.028 6.992 91.815 6.992 64c0-31.434 25.574-57.01 57.01-57.01 31.433 0 57.006 25.576 57.006 57.01 0 30.315-23.787 55.17-53.674 56.902z" 
-                                            />
+                                        ? <svg 
+                                            viewBox="0 0 48 48"
+                                            height={badgeSize}
+                                          >
+                                            <path fill="#2684ff" d="M40.65,19.652C40.65,10.456,33.194,3,23.998,3C15.801,2.988,8.815,8.946,7.533,17.042	S11.201,32.962,19,35.485v8.344C19,44.476,19.524,45,20.171,45h7.658C28.476,45,29,44.476,29,43.829v-8.338	C35.879,33.276,40.642,26.879,40.65,19.652z M23.998,25.279c-3.109,0-5.63-2.521-5.63-5.63s2.521-5.63,5.63-5.63	s5.63,2.521,5.63,5.63S27.107,25.279,23.998,25.279z"></path><linearGradient id="lgQxOMjijNeFEHZ9gijeza_Qu2sYlfDM0qZ_gr1" x1="32.213" x2="32.213" y1="35.497" y2="3" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0052cc"></stop><stop offset=".044" stop-color="#0255cf"></stop><stop offset=".464" stop-color="#1c77f2"></stop><stop offset=".732" stop-color="#2684ff"></stop></linearGradient><path fill="url(#lgQxOMjijNeFEHZ9gijeza_Qu2sYlfDM0qZ_gr1)" d="M23.875,3v11.026c3.109,0,5.63,2.521,5.63,5.63s-2.521,5.63-5.63,5.63	c1.365,0,2.674,0.542,3.639,1.507c0.965,0.965,1.507,2.274,1.507,3.639v5.065c7.802-2.523,12.606-10.35,11.323-18.449	C39.062,8.949,32.075,2.989,23.875,3z"></path><path d="M26.239,24.813c-0.249,0.108-0.508,0.195-0.774,0.267c-0.469,0.126-0.959,0.2-1.468,0.2	c-0.001,0-0.002,0-0.003,0c-0.04,0.001-0.079,0.006-0.119,0.006c1.365,0,2.674,0.542,3.639,1.507s1.507,2.274,1.507,3.639v5.051	c0.163-0.053,0.318-0.118,0.478-0.175c0.167-0.06,0.335-0.119,0.5-0.183v-4.749C30,27.858,28.441,25.702,26.239,24.813z" opacity=".05"></path><path d="M25.466,25.079c-0.469,0.126-0.959,0.2-1.468,0.2c-0.001,0-0.002,0-0.003,0	c-0.04,0.001-0.079,0.006-0.119,0.006c1.365,0,2.674,0.542,3.639,1.507s1.507,2.274,1.507,3.639v5.051	c0.163-0.053,0.318-0.118,0.478-0.175v-4.933C29.5,27.85,27.788,25.723,25.466,25.079z" opacity=".07"></path>
                                         </svg>
-                                    }
+                                        : <svg 
+                                            viewBox="0,0,256,256"
+                                            height={badgeSize}
+                                        >
+                                            <defs>
+                                                <linearGradient 
+                                                    x1="32.213" 
+                                                    y1="35.497" 
+                                                    x2="32.213" 
+                                                    y2="3" 
+                                                    gradientUnits="userSpaceOnUse" 
+                                                    id="color-1_Qu2sYlfDM0qZ_gr1"
+                                                >
+                                                    <stop offset="0" stop-color="#ffffff"></stop>
+                                                    <stop offset="0.044" stop-color="#ffffff"></stop>
+                                                    <stop offset="0.464" stop-color="#ffffff"></stop>
+                                                    <stop offset="0.732" stop-color="#ffffff"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <g transform="scale(5.33333,5.33333)">
+                                                <path fill={badgeColour} d="M40.65,19.652c0,-9.196 -7.456,-16.652 -16.652,-16.652c-8.197,-0.012 -15.183,5.946 -16.465,14.042c-1.282,8.096 3.668,15.92 11.467,18.443v8.344c0,0.647 0.524,1.171 1.171,1.171h7.658c0.647,0 1.171,-0.524 1.171,-1.171v-8.338c6.879,-2.215 11.642,-8.612 11.65,-15.839zM23.998,25.279c-3.109,0 -5.63,-2.521 -5.63,-5.63c0,-3.109 2.521,-5.63 5.63,-5.63c3.109,0 5.63,2.521 5.63,5.63c0,3.109 -2.521,5.63 -5.63,5.63z"></path>
+                                                <path fill={badgeColour} d="M23.875,3v11.026c3.109,0 5.63,2.521 5.63,5.63c0,3.109 -2.521,5.63 -5.63,5.63c1.365,0 2.674,0.542 3.639,1.507c0.965,0.965 1.507,2.274 1.507,3.639v5.065c7.802,-2.523 12.606,-10.35 11.323,-18.449c-1.282,-8.099 -8.269,-14.059 -16.469,-14.048z"></path>
+                                                <path fill={badgeColour} d="M26.239,24.813c-0.249,0.108 -0.508,0.195 -0.774,0.267c-0.469,0.126 -0.959,0.2 -1.468,0.2c-0.001,0 -0.002,0 -0.003,0c-0.04,0.001 -0.079,0.006 -0.119,0.006c1.365,0 2.674,0.542 3.639,1.507c0.965,0.965 1.507,2.274 1.507,3.639v5.051c0.163,-0.053 0.318,-0.118 0.478,-0.175c0.167,-0.06 0.335,-0.119 0.5,-0.183v-4.749c0.001,-2.518 -1.558,-4.674 -3.76,-5.563z"></path>
+                                                <path fill={badgeColour} d="M25.466,25.079c-0.469,0.126 -0.959,0.2 -1.468,0.2c-0.001,0 -0.002,0 -0.003,0c-0.04,0.001 -0.079,0.006 -0.119,0.006c1.365,0 2.674,0.542 3.639,1.507c0.965,0.965 1.507,2.274 1.507,3.639v5.051c0.163,-0.053 0.318,-0.118 0.478,-0.175v-4.933c0,-2.524 -1.712,-4.651 -4.034,-5.295z"></path>
+                                            </g>
+                                        </svg>
+                                    }   
                                     <p className={badgeText}>Source Tree</p>
                                 </div>
                             </div> 
