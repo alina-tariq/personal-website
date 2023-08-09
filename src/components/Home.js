@@ -25,7 +25,7 @@ export default function Home() {
             px-8 pb-8 sm:pt-32 pt-24">
             <div className="flex flex-col items-center justify-center text-center">
                 <div className="">
-                    <h1 className="font-Sacramento lg:text-9xl xs:text-8xl xxs:text-7xl text-6xl xl:tracking-normal tracking-tight font-extrabold mx-auto
+                    <h1 className="font-Sacramento lg:text-9xl xs:text-8xl xxs:text-7xl text-6xl xl:tracking-normal tracking-tighter font-extrabold mx-auto
                         text-transparent pt-5 md:pb-8 pb-4 xs:px-16 px-5 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500
                         md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] sm:drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                         <TypeAnimation
