@@ -10,22 +10,13 @@ const contentDiv = "md:w-3/5 w-full flex flex-col items-center justify-center fo
 const content = "lg:text-lg sm:text-base text-sm mx-auto md:pt-2 md:px-16 sm:px-8 xxs:px-6 px-4";
 
 // fixes Sacramento font spacing issue on non-PC devices
-// let isPC;
-
-{console.log("width: " + window.screen.width)
- console.log("height: " + window.screen.height)}
-
-// if (window.screen.orientation.type == 'landscape-primary' && window.screen.width < 1024) {
-//     isPC = false;
-// } else if (window.screen.orientation.type == 'portrait-primary' && window.screen.height < 1024) {
-//     isPC = false;
-// } else {
-//     isPC = true;
-// }
-
-// isPC 
-//     ? sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-2 pb-5 px-8 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500"
-//     : sectionTitle = "font-Sacramento xl:text-8xl sm:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-2 pb-5 px-8 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 tracking-tighter"
+if (window.screen.width < 1024 && window.screen.height < 1024) {
+    // not a PC
+    sectionTitle += " tracking-tighter"
+} else {
+    // a PC
+    sectionTitle += " tracking-normal"
+}
 
 export {
     section,
