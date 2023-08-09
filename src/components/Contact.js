@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { useForm, ValidationError } from '@formspree/react';
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv, content } from "../assets/js/standardStyle";

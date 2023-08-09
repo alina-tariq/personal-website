@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { useHover } from '@react-hooks-library/core'
 import { Element } from "react-scroll";
-import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PythonPlain, PythonOriginal, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, ReactOriginal} from 'devicons-react';
+import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, ReactOriginal} from 'devicons-react';
 import { CircleStackIcon } from "@heroicons/react/24/outline";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { badgeSectionDiv, badgeSectionPadding, badgeSectionTitle, badgeDiv, badgeImage, badgeColour, badgeText} from "../assets/js/skillsStyle";
