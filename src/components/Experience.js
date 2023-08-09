@@ -1,24 +1,8 @@
-import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { orgLogo, orgLogoShape, orgName, posTitle, langDiv, langCard, timeline, firstExp, midExp, lastExp } from "../assets/js/experienceStyle";
 
 export default function Experience() {
-    const [isPC, setIsPC] = useState(true);
-
-    // fixes spacing issue on non-PC devices
-     useEffect(() => {
-        if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
-            setIsPC(true);
-        } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
-            setIsPC(true);
-        } else {
-            setIsPC(false);
-        }
-    }, []);
-    
-    isPC ? sectionTitle.concat(" tracking-normal") : sectionTitle.concat(" tracking-tighter");
-
     return (
         <Element id='/experience' name='/experience'>
             <div className={section}>

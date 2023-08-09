@@ -7,26 +7,12 @@ export default function Contact() {
     const formArea = "block w-full p-2.5 text-sm shadow-sm rounded-lg text-gray-900";
     const formID = process.env.REACT_APP_FORM_ID;
     const [state, handleSubmit] = useForm(formID); 
-    const [isPC, setIsPC] = useState(true);
 
     // shows message upon successful submission
     if (state.succeeded) {
         document.getElementById("submission").innerHTML = "Message sent :)";
     }
-
-    // fixes spacing issue on non-PC devices
-     useEffect(() => {
-        if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
-            setIsPC(true);
-        } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
-            setIsPC(true);
-        } else {
-            setIsPC(false);
-        }
-    }, []);
     
-    isPC ? sectionTitle.concat(" tracking-normal") : sectionTitle.concat(" tracking-tighter");
-
     return (
         <Element id='/contact' name='/contact'>
             <div className={section}>

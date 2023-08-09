@@ -42,7 +42,6 @@ export default function Skills() {
     const sqlHovered = useHover(sqlRef)
     
     const [isMdScreen, setIsMdScreen] = useState(true);
-    const [isPC, setIsPC] = useState(true);
     
     // sets icon size depending on screen size
     useEffect(() => {
@@ -56,19 +55,6 @@ export default function Skills() {
     }, []);
 
     const badgeSize = isMdScreen ? "4em" : "3em";
-
-    // fixes spacing issue on non-PC devices
-     useEffect(() => {
-        if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
-            setIsPC(true);
-        } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
-            setIsPC(true);
-        } else {
-            setIsPC(false);
-        }
-    }, []);
-    
-    isPC ? sectionTitle.concat(" tracking-normal") : sectionTitle.concat(" tracking-tighter");
 
     return (
         <Element id='/skills' name='/skills'>

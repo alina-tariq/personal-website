@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useEffect, useCallback, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import ScrollDown from "./ScrollDown";
 import ScrollButton from "./ScrollButton";
@@ -8,7 +8,7 @@ export default function Home() {
     const resetWindowScrollPosition = useCallback(() => window.scrollTo(0, 0), [])
     const fadeIn = useRef();
     const greeting = "font-Sacramento lg:text-9xl xs:text-8xl xxs:text-7xl text-6xl font-extrabold mx-auto text-transparent pt-5 md:pb-8 pb-4 xs:px-16 px-5 bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] sm:drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
-    const [isPC, setIsPC] = useState(true);
+    let isPC = true;
 
     // scrolls back to top on page refresh
     useEffect(() => {
@@ -22,16 +22,14 @@ export default function Home() {
         gsap.to(fadeIn.current, {opacity: 1, duration: 3, delay: 1.75});
     })
 
-    // fixes spacing issue on non-PC devices
-    useEffect(() => {
-        if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
-            setIsPC(true);
-        } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
-            setIsPC(true);
-        } else {
-            setIsPC(false);
-        }
-    }, []);
+    // fixes Sacramento font spacing issue on non-PC devices
+    if (window.screen.orientation == 'landscape.primary' && window.screen.width > 1024) {
+        isPC = true;
+    } else if (window.screen.orientation == 'potrait-primary' && window.screen.height > 1024) {
+        isPC = true;
+    } else {
+        isPC = false;
+    }
     
     isPC ? greeting.concat(" tracking-normal") : greeting.concat(" tracking-tighter");
 
