@@ -122,10 +122,10 @@ export default function Skills() {
                                     }
                                     <p className={badgeText}>PHP</p>
                                 </div>
-                                <div className={badgeImage} ref={sqlRef}>
+                                <div className={badgeImage.concat(" border-4 border-gray-200")} ref={sqlRef}>
                                     {sqlHovered 
                                         ? <CircleStackIcon fill={"#0ea5e9"} color={"black"} height={badgeSize} />
-                                        : <CircleStackIcon color={badgeColour} height={badgeSize} />
+                                        : <CircleStackIcon fill={badgeColour} color={"black"} height={badgeSize} />
                                     }
                                     <p className={badgeText}>SQL</p>
                                 </div>
