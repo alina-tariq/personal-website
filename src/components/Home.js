@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="flex flex-col opacity-0" ref={fadeIn}>
                     <h3 className="font-Merriweather sm:text-2xl xs:text-xl xxs:text-lg text-base font-bold mx-auto text-white
                     md:pt-10 xs:pt-6 pt-4 md:pb-0 pb-2 lg:px-32 md:px-10 px-4">
-                        developer<br />
+                        software developer<br />
                         toronto, canada
                         {/* i'm a software developer currently based in toronto. i used to work with brain code to understand language
                         processing, but now i 
