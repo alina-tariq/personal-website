@@ -44,7 +44,7 @@ export default function Experience() {
                                         Django
                                     </span>
                                     <span className={langCard}>
-                                        Three.js
+                                        p5.js
                                     </span>
                                 </div>
                             </li>
