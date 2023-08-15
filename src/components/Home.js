@@ -59,10 +59,6 @@ export default function Home() {
                     md:pt-10 xs:pt-6 pt-4 md:pb-0 pb-2 lg:px-32 md:px-10 px-4">
                         software developer<br />
                         toronto, canada
-                        {/* i'm a software developer currently based in toronto. i used to work with brain code to understand language
-                        processing, but now i 
-                        <span className="font-Caveat sm:text-3xl xxs:text-2xl text-xl ml-1 sm:mr-3 mr-2">(mostly)</span>
-                        work with computer code to build accessible and innovative products. */}
                     </h3>
                 </div>
                 <ScrollDown />
