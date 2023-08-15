@@ -59,7 +59,7 @@ export default function Home() {
                     <h3 className="font-Merriweather sm:text-2xl xs:text-xl xxs:text-lg text-base font-bold mx-auto text-white
                     md:pt-10 xs:pt-6 pt-4 md:pb-0 pb-2 lg:px-32 md:px-10 px-4">
                         software developer<br />
-                       <div className="pt-1">toronto, canada</div>
+                        toronto, canada
                     </h3>
                     <div className="flex flex-wrap justify-center text-center md:pt-6 xs:pt-4 pt-2">
                         <a href="https://www.linkedin.com/in/alinatariq/"> 
