@@ -24,7 +24,7 @@ export default function Projects() {
                                         <img class="md:h-56 h-40 rounded-t-lg" src={require("../assets/img/crochetCompanion.png")} alt="" />
                                     </a>
                                 </div>
-                                <div class="px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 text-center">
+                                <div class="h-[16rem] flex flex-col px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 justify-center text-center">
                                     <a href="https://github.com/alina-tariq/CrochetCompanion">
                                         <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">Crochet Companion</h5>
                                     </a>
@@ -41,7 +41,7 @@ export default function Projects() {
                                         <img class="md:h-56 h-40 rounded-t-lg" src={require("../assets/img/mastermind.png")} alt="" />
                                     </a>
                                 </div>
-                                <div class="px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 text-center">
+                                <div class="h-[16rem] flex flex-col px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 justify-center text-center">
                                     <a href="https://github.com/alina-tariq/mastermind">
                                         <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">Mastermind</h5>
                                     </a>
@@ -53,11 +53,28 @@ export default function Projects() {
                             </div>
                             <div class="md:w-60 w-52 rounded-lg shadow m-6">
                                 <div className="bg-[#4b674b] flex border-4 rounded-t-lg border-amber-500 items-center justify-center text-center">
+                                    <a href="https://github.com/alina-tariq/personal-website">
+                                        <img class="md:h-56 h-40 rounded-t-lg" src={require("../assets/img/website.png")} alt="" />
+                                    </a>
+                                </div>
+                                <div class="h-[16rem] flex flex-col px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 justify-center text-center">
+                                    <a href="https://github.com/alina-tariq/personal-website">
+                                        <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">Personal Website</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-sm text-white">My portfolio website.</p>
+                                    <div class="items-center justify-center px-2 pt-2">
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#reactjs</span>
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#html/css</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-60 w-52 rounded-lg shadow m-6">
+                                <div className="bg-[#4b674b] flex border-4 rounded-t-lg border-amber-500 items-center justify-center text-center">
                                     <a href="https://github.com/alina-tariq/smartcustomerservices">
                                         <img class="md:h-56 h-40 rounded-t-lg" src={require("../assets/img/scs.png")} alt="" />
                                     </a>
                                 </div>
-                                <div class="px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 text-center">
+                                <div class="h-[16rem] flex flex-col px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 justify-center text-center">
                                     <a href="https://github.com/alina-tariq/smartcustomerservices">
                                         <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">Smart Customer Services</h5>
                                     </a>
@@ -70,13 +87,13 @@ export default function Projects() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="md:w-60 w-52 rounded-lg shadow m-6">
+                            <div class="md:w-60 w-52 rounded-lg shadow m-6 border-2 border-gray-200">
                                 <div className="bg-[#b6a5b6] flex border-4 rounded-t-lg border-amber-500 items-center justify-center text-center">
                                     <a href="https://github.com/alina-tariq/mindtrack">
                                         <img class="md:h-56 h-40 rounded-t-lg" src={require("../assets/img/mindtrack.png")} alt="" />
                                     </a>
                                 </div>
-                                <div class="px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 text-center">
+                                <div class="h-[16rem] flex flex-col px-3 py-4 border-x-4 rounded-b-lg border-b-4 border-amber-500 justify-center text-center">
                                     <a href="https://github.com/alina-tariq/mindtrack">
                                         <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">MindTrack</h5>
                                     </a>
