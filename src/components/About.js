@@ -34,17 +34,17 @@ export default function About() {
                             heartbreak they have caused me. 
                             <br />
                             <br />
-                            <div className="pt-2 font-Caveat text-2xl font-bold">
+                            <div className="pt-2 font-Caveat lg:text-2xl xs:text-xl text-lg font-bold">
                                 <div className="pb-2">
-                                    <BookOpenIcon className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 mr-2"/>
+                                    <BookOpenIcon className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/>
                                     Currently Reading: The Jasad Heir by Saba Hashem & Maid by Nita Prose
                                 </div>
                                 <div className="pb-2">
-                                    <GiBasketballBall className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 mr-2"/> 
+                                    <GiBasketballBall className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/> 
                                     #WeTheNorth
                                 </div>
                                 <div>
-                                    <GiHockey className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 mr-2"/>
+                                    <GiHockey className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/>
                                     #LeafsForever, #FindAWay 
                                 </div>
                             </div> 
