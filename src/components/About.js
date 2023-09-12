@@ -37,7 +37,9 @@ export default function About() {
                             <div className="pt-2 font-Caveat lg:text-2xl xs:text-xl text-lg font-bold">
                                 <div className="pb-2">
                                     <BookOpenIcon className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/>
-                                    Currently Reading: The Jasad Heir by Saba Hashem & Maid by Nita Prose
+                                    Currently Reading: Red Rising by Pierce Brown 
+                                    <span className="text-amber-500"> & </span> 
+                                    Us Against You by Fredrik Backman
                                 </div>
                                 <div className="pb-2">
                                     <GiBasketballBall className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/> 
