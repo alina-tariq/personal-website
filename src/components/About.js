@@ -24,13 +24,12 @@ export default function About() {
                             mostly work with computer code to help build dynamic and innovative products.<br />
                             <br />
                             I started my programming journey back in 2010, but opted to take the scenic route to a
-                            CS degree. While this detour involved dissecting sheep brains and inducing schizophrenia in lab
-                            rats (all in the name of research, worry not), it also helped equip me with a fresh
-                            perspective along with a knack for problem-solving and analytical thinking. <br />
+                            CS degree. While this detour largely involved dissecting sheep brains, covertly washing children's 
+                            hair in bathrooms, and inducing schizophrenia in lab rats (all in the name of research, worry not), 
+                            it helped equip me with a fresh perspective along with a knack for problem-solving and analytical thinking. <br />
                             <br />
-                            When I'm not busy coding bugs into existence, 
-                            I enjoy breaking out of an escape room with friends, listening to audiobooks as I crochet, 
-                            and rooting for my favourite sports teams through all the
+                            When I'm not busy coding bugs into existence, I enjoy breaking out of an escape room with 
+                            friends, listening to audiobooks as I crochet, and rooting for my favourite sports teams in spite of all the
                             heartbreak they have caused me. 
                             <br />
                             <br />
@@ -47,7 +46,9 @@ export default function About() {
                                 </div>
                                 <div>
                                     <GiHockey className="xl:h-8 xl:w-8 h-6 w-6 inline-block text-amber-500 md:mr-2 mr-1"/>
-                                    #LeafsForever, #FindAWay 
+                                    #LeafsForever
+                                    <span className="text-amber-500"> & </span>
+                                    #FindAWay 
                                 </div>
                             </div> 
                             
