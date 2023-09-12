@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { useHover } from '@react-hooks-library/core'
 import { Element } from "react-scroll";
-import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, ReactOriginal} from 'devicons-react';
+import { AndroidstudioPlain, AndroidstudioOriginal, AngularjsPlain, AngularjsOriginal, CPlain, COriginal, Css3Plain, Css3Original, DjangoPlain, Html5Plain, Html5Original, JavaPlain, JavaOriginal, JavascriptPlain, JavascriptOriginal, JiraPlain, JiraOriginal, JupyterPlainWordmark, PhpPlain, PhpOriginal, GithubOriginal, JupyterOriginalWordmark, ReactOriginal, VscodePlain, VscodeOriginal} from 'devicons-react';
 import { CircleStackIcon } from "@heroicons/react/24/outline";
 import { section, sectionTitleDiv, sectionTitleUnderline, sectionTitle, contentDiv } from "../assets/js/standardStyle";
 import { badgeSectionDiv, badgeSectionPadding, badgeSectionTitle, badgeDiv, badgeImage, badgeColour, badgeText} from "../assets/js/skillsStyle";
@@ -23,6 +23,7 @@ export default function Skills() {
     const reactRef = useRef(null);
     const sourcetreeRef = useRef(null);
     const sqlRef = useRef(null);
+    const vscodeRef = useRef(null);
     
     const androidStudioHovered = useHover(androidStudioRef)
     const angularHovered = useHover(angularRef)
@@ -40,6 +41,7 @@ export default function Skills() {
     const reactHovered = useHover(reactRef)
     const sourcetreeHovered = useHover(sourcetreeRef)
     const sqlHovered = useHover(sqlRef)
+    const vscodeHovered = useHover(vscodeRef);
     
     const [isMdScreen, setIsMdScreen] = useState(true);
     
@@ -281,6 +283,13 @@ export default function Skills() {
                                         </svg>
                                     }   
                                     <p className={badgeText}>Source Tree</p>
+                                </div>
+                                <div className={badgeImage} ref={vscodeRef}>
+                                    {vscodeHovered
+                                        ? <VscodeOriginal size={badgeSize} />
+                                        : <VscodePlain color={badgeColour} size={badgeSize} />
+                                    }
+                                    <p className={badgeText}>VS Code</p>
                                 </div>
                             </div> 
                         </div>
