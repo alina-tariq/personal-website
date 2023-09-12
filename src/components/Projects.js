@@ -46,7 +46,7 @@ export default function Projects() {
                                     <a href="https://github.com/alina-tariq/mastermind">
                                         <h5 class="mb-2 md:text-xl text-lg font-bold tracking-tight text-white">Mastermind</h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-sm text-white">A command line version of the logic game Mastermind.</p>
+                                    <p class="mb-3 font-normal text-sm text-white">A command line, multi-level version of the classic logic game Mastermind.</p>
                                     <div class="items-center justify-center px-2 pt-2">
                                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#python</span>
                                     </div>
