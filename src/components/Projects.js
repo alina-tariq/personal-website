@@ -32,6 +32,7 @@ export default function Projects() {
                                     <div class="items-center justify-center px-2 pt-2">
                                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#swift</span>
                                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#swiftui</span>
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#realm</span>
                                     </div>
                                 </div>
                             </div>
